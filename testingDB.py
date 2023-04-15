@@ -98,4 +98,4 @@ def home(url_session_id):
     return render_template('home.html', session_id=session_id, subsession_ids=subsession_ids, selected_subsession=subsession_id, data_list=data_list, special_subsession_ids=special_subsession_ids, cache_version = 1)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=8080)
