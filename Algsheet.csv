@@ -1,0 +1,993 @@
+Goal,Set,Subset,Alg,Learned?,Link
+ZBLL,T,horizontal,"(U2) F' R F R2 D' R U' R' D R2 F' R' F
+(U) R' D R D' R' D R U R' D' R D R' D' R
+(U') R U R' U R U2 R' L' U' L U' L' U2 L
+(U) L' U' L U' L' U2 L R U R' U R U2 R'
+(U2) R' D' R D R' D' R U' R' D R D' R' D R",TRUE,http://google.com
+ZBLL,T,horizontal,R U2 R' U' R U' R2' U2 R U R' U R,TRUE,google.com
+ZBLL,T,horizontal,(U') R U R' U R U2 R' U' R U2 R' U' R U' R',TRUE,google.com
+ZBLL,T,horizontal,R U2 R' U' R U' R' U R U R' U R U2 R',TRUE,google.com
+ZBLL,T,horizontal,"(U) R' F' U' F U' R U R2 F R F' U R
+(U') R U R' U R U' R' U R' U' R2 U' R2 U2 R",TRUE,google.com
+ZBLL,T,horizontal,"R U' R2 F R F' R U' B U' B' U' R' 
+R U' R2 F R F' R U' f' R' f U' R'
+(U') R U R2 U' R2 U' R2 U2 R U' R U' R'",TRUE,google.com
+ZBLL,T,horizontal,"x' D R U' R' D' R2 D2 R' U R D2 R2 x
+x D' R' U R D R2' D2 R U' R' D2 R2 x'",TRUE,google.com
+ZBLL,T,horizontal,(U2) R' U2 R U R' U R2 U2 R' U' R U' R',TRUE,google.com
+ZBLL,T,horizontal,(U2) R U' R' U2 R U R' U2 R U R' U R U' R',TRUE,google.com
+ZBLL,T,horizontal,"(U2) R' U2 R U R' U R U' R' U' R U' R' U2 R
+L' U2 L U L' U L U' L' U' L U' L' U2 L",TRUE,google.com
+ZBLL,T,horizontal,"(U2) F R U R2' F2 D' F' D F' R U' F'
+(U') R' U' R U' R' U R U' R U R2 U R2 U2 R'",TRUE,google.com
+ZBLL,T,horizontal,"(U') R' U' R2 U R2 U R2 U2 R' U R' U R
+(U2) R' U R2 f' U' f R' U F' U F U R 
+R' F2 L F L' U L' U' L U' F U R",TRUE,google.com
+ZBLL,T,vertical,(U') R U' R2 D' r U2 r' D R2 U R',TRUE,google.com
+ZBLL,T,vertical,"R U2 M' U R' U' F' U2 F r' F R F' 
+(U2) R U R' U R U R2 D' r U2 r' D R2 U R'",TRUE,google.com
+ZBLL,T,vertical,"(U') R' U F' R' U2 R U2 F U' R' U R2
+(U) R2 U R' D' R U R' D R' U' R2 U' R2",TRUE,google.com
+ZBLL,T,vertical,"R2 U' R U F' U2 R' U2 R F U' R
+(U2) R U R' U' R U R2 D' R U' R' D R U2 R U' R'",TRUE,google.com
+ZBLL,T,vertical,"r B' R' B r2' F R F' r U R' U2 R
+r' F R F' r U M' U R U' r' F R' F'
+(U') r U2 R2 F R F' R U2 B2 r' U' r B' r'",TRUE,google.com
+ZBLL,T,vertical,"(U) R' UD' R U2 R' D R' U' R U2 R' U' R2
+S M F R' F' r F' U2 F U R U R' S'",TRUE,google.com
+ZBLL,T,vertical,(U) R' U R2 D r' U2 r D' R2 U' R,TRUE,google.com
+ZBLL,T,vertical,"F R' F' r F' U2 F U R U' M U2 R' 
+(U2) R U' R2 D' r U2 r' D R2 U' R' U' R U' R'",TRUE,google.com
+ZBLL,T,vertical,(U') R2 U' R D R' U' R D' R U R2 U R2 (U) L U' F L U2 L' U2 F' U L U' L2,TRUE,google.com
+ZBLL,T,vertical,(U) F U R' D' r U2 r' D R2 U' R' U F',TRUE,google.com
+ZBLL,T,vertical,"(U2) R' F2 U2 F R U2 r U' r' F U2 R' F U2 R
+(U2) R2 F2 R U' M' F' M U M' F r' F2 R2",TRUE,google.com
+ZBLL,T,vertical,"(U') R DU' R' U2 R D' R U R' U2 R U R2
+S R U' R' U' F' U2 F r' F R F' M' S'",TRUE,google.com
+ZBLL,T,front,(U2) R U' R' U2 L R U' R' U L',TRUE,google.com
+ZBLL,T,front,(U2) F R U' R' S U' R U f' U R2' F R F' R,TRUE,google.com
+ZBLL,T,front,(U) R' F R' F' R2 U' R' U R f R' f',TRUE,google.com
+ZBLL,T,front,"F' U L U2 L' U' F L U L' U' L U' L'
+(U2) F U F' U R' F r U' M U2 R' F' R",TRUE,google.com
+ZBLL,T,front,"(U2) R' U' R U' R' U R F U' R' U2 R U F'
+(U') F R' F' U2 S' U' f R F' U R' U R",TRUE,google.com
+ZBLL,T,front,"r' U2 R U R2 F2 R F R' F2 R U r 
+R' U R U F' R' E R U R' D f R2 D z'",TRUE,google.com
+ZBLL,T,front,"R' U R U2 L' R' U R U' L
+(U2) L' U R' U' R L U2 R' U' R
+(U2) L' U L U2 R' L' U L U' R",TRUE,google.com
+ZBLL,T,front,(U2) F' r2 U2 R' F' R U2 r' U r',TRUE,google.com
+ZBLL,T,front,"(U) R U R2 F R F' R U' R' F' U F
+(U) R B' R B R2 U R U' R' F' U F",TRUE,google.com
+ZBLL,T,front,F U' R' U2 R U F' R' U' R U R' U R,TRUE,google.com
+ZBLL,T,front,"R' F R U2 M' U r' F' R U' F U' F'
+(U2) L U L' U L U' L' F' U L U2 L' U' F",TRUE,google.com
+ZBLL,T,front,"(U2) R' F' r' F2 r U' r' F2 r2 U' r' F2 R
+r' U' R' F2 R F' R' F2 R2 U' R' U2 r",TRUE,google.com
+ZBLL,T,back,(U') x R' U2 R' D2 R U2 R' D2 R2 x',TRUE,google.com
+ZBLL,T,back,"(U') R2 F' R U S' R U' R' f R B U B'
+(U') R2 F' R U S' R U' R' f R f R f'",TRUE,google.com
+ZBLL,T,back,"(U2) r' D' r U' r' F2 r U' r' F' D r
+R' B' R U' R' U2 R U' R' U' B R",TRUE,google.com
+ZBLL,T,back,(U2) M F R F' r U R' U R' U' R U' R',TRUE,google.com
+ZBLL,T,back,(U) R' U' R U' F U' R' U R U F' R' U R,TRUE,google.com
+ZBLL,T,back,"(U2) F R U R' U' R U' R' U' R U R' F'
+f U R U' R' U R' U' R f' R' U R",TRUE,google.com
+ZBLL,T,back,(U') x' R U2 R D2 R' U2 R D2 R2 x,TRUE,google.com
+ZBLL,T,back,"(U) R2 F' R U' r' F2 R F R' F2 M' F R2 
+(U') R' F2 R U' R2 F2 R2 U' R' U2 R' F2 R2",TRUE,google.com
+ZBLL,T,back,"(U2) R F R' U R U2 R' U R U F' R'
+r D r' U r B2 r' U r B D' r'",TRUE,google.com
+ZBLL,T,back,M' f' U' f r' U' R U' R U R' U R,TRUE,google.com
+ZBLL,T,back,"(U') L U L' U F' U L U' L' U' F L U' L'
+(U) R U R' U f' L U L' U' L' f R U' R'",TRUE,google.com
+ZBLL,T,back,F' M2 U R' F' R2 U' r2 F' R U F2,TRUE,google.com
+ZBLL,T,Right,R' F' r U R U' r' F,TRUE,google.com
+ZBLL,T,Right,"(U) R' U' R' D' R U' M' U2 r' D R2'
+R' U' R' u' f R' S' R2 F' u R2",TRUE,google.com
+ZBLL,T,Right,"R U R' U' R' F' R U2 R U2 R' F
+L' U2 L U2 L F' L' U' L' U L F",TRUE,google.com
+ZBLL,T,Right,F U R U2 R' U R U R' F',TRUE,google.com
+ZBLL,T,Right,(U') R U R' U' R' U' F R f' R' U R S,TRUE,google.com
+ZBLL,T,Right,"(U2) R' U' S' R U R' S R2 f' U' f
+(U2) R' B' U' R U R' U R U R' U' B R",TRUE,google.com
+ZBLL,T,Right,(U') R' U2 R F U' R' U R U F' R' U R,TRUE,google.com
+ZBLL,T,Right,(U) S R U' R2 U B' U' R2 U B R' S',TRUE,google.com
+ZBLL,T,Right,"(U2) F U R' U' R F' R' U' R U R' U R
+(U) M F' r U R' U' r' F' r U r' F r",TRUE,google.com
+ZBLL,T,Right,"(U) F R' U' R2 F R' F' U R B' R2 U F' U' f z'
+(U2) R U2 R' U2 R U' R' U r' F R F' r U' R'",TRUE,google.com
+ZBLL,T,Right,(U') F' U f U2 R U2 R' U2 S',TRUE,google.com
+ZBLL,T,Right,"(U) M' U r' U' R U R f' U' f M' U' M
+(U') M U R' F' r U r U' r' F M U' M'
+R' F R U2 S R' F' R S'F R U2 R' F'",TRUE,google.com
+ZBLL,T,Left,r U R' U' r' F R F',TRUE,google.com
+ZBLL,T,Left,(U') R' U' R S U R U' S' U R' F R F',TRUE,google.com
+ZBLL,T,Left,"R U2 R' U2 R' F R U R U' R' F'
+L' U' L U L F L' U2 L' U2 L F'",TRUE,google.com
+ZBLL,T,Left,F' U' L' U2 L U' L' U' L F,TRUE,google.com
+ZBLL,T,Left,(U') R' U' R U R U f' U' F R U' R' S,TRUE,google.com
+ZBLL,T,Left,"R U S' R' U' R S R2 F R F'
+R F U R' U' R U' R' U' R U F' R'",TRUE,google.com
+ZBLL,T,Left,(U) L U2 L' F' U L U' L' U' F L U' L',TRUE,google.com
+ZBLL,T,Left,(U) S R' U R2 U' F U R2 U' F' R S',TRUE,google.com
+ZBLL,T,Left,(U') M F R' F' r U R U R' U' R U' R',TRUE,google.com
+ZBLL,T,Left,"(U2) F R' U' R2 F R' F' U l U' R2 U F u' z' 
+(U2) F R' U' R2 F R' F' U R f' U2 f U F'
+(U) R U R D R' U' R D' S2 R2 U' R2 S2 R2",TRUE,google.com
+ZBLL,T,Left,"(U') f R' F' U2 R' U2 R U2 S'
+(U') f R' b' R2 D' R2 D R2 S'",TRUE,google.com
+ZBLL,T,Left,(U) M U' r U R' U' R' F R F' M U M',TRUE,google.com
+ZBLL,U,CP Solved,"(U) F' R F R2 D' R U R' D R2 F' R' F
+(U2) R' D R D' R' D R U' R' D' R D R' D' R
+(U) R' U2 R U R' U R L U2 L' U' L U' L'
+(U') L U2 L' U' L U' L' R' U2 R U R' U R",TRUE,google.com
+ZBLL,U,CP Solved,(U2) R U R' U R U2 R2' U' R U' R' U2 R,TRUE,google.com
+ZBLL,U,CP Solved,(U') R U R' U' R U' R' U2 R U' R' U2 R U R',TRUE,google.com
+ZBLL,U,CP Solved,(U) R' U' F R' F' R2 U' R' U F' U F R,TRUE,google.com
+ZBLL,U,CP Solved,(U) R U2 R' U' R U' R' U' R U R' U R U2 R',TRUE,google.com
+ZBLL,U,CP Solved,"L U F U' R U' R' U R' F R F2 L' 
+(U2) R U R' U R' U2 R2 U R2 U R2 U' R' 
+R U B U B' U R' F R' F' R2 U R'",TRUE,google.com
+ZBLL,U,CP Solved,"(U2) x R2 D2 R U R' D2 R2 D' R' U' R D x'
+x' R2 D2 R' U' R D2 R2' D R U R' D' x",TRUE,google.com
+ZBLL,U,CP Solved,R' U' R U' R' U2 R2 U R' U R U2 R',TRUE,google.com
+ZBLL,U,CP Solved,(U') R' U' R U R' U R U2 R' U R U2 R' U' R,TRUE,google.com
+ZBLL,U,CP Solved,"(U) R U2' R2' F R F' R U' B U' B' R' 
+(U) R U2' R2' F R F' R U' f R' f' R'
+(U2) F U R' F u' R u F2 R2 U' R' F'",TRUE,google.com
+ZBLL,U,CP Solved,(U) R' U2 R U R' U R U R' U' R U' R' U2 R,TRUE,google.com
+ZBLL,U,CP Solved,"R' U' F' U L' U L U' L F' L' F2 R 
+R' U' R U' R U2 R2 U' R2 U' R2 U R",TRUE,google.com
+ZBLL,U,Diag,S' R' U' R S R' U F' U' F U R,TRUE,google.com
+ZBLL,U,Diag,(U') R U B' R B R2 S' R U' R' S,TRUE,google.com
+ZBLL,U,Diag,R' U2 R F U' R' U' R U F',TRUE,google.com
+ZBLL,U,Diag,(U') F U' R' U R U F' R' U2 R,TRUE,google.com
+ZBLL,U,Diag,"R' F' M U' M' F M U r
+(U2) R B M' U M B' M' U' r'",TRUE,google.com
+ZBLL,U,Diag,(U2) M U' M' F U R U' R' F' M U M',TRUE,google.com
+ZBLL,U,Diag,(U2) R' U' F' U F U' R S' R' U R S,TRUE,google.com
+ZBLL,U,Diag,(U') R' U' F R' F' R2 S' R' U R S,TRUE,google.com
+ZBLL,U,Diag,"L U2 L' F' U L U L' U' F
+(U2) R U2 R' B' U R U R' U' B",TRUE,google.com
+ZBLL,U,Diag,"(U) F' U L U' L' U' F L U2 L'
+(U') B' U R U' R' U' B R U2 R'",TRUE,google.com
+ZBLL,U,Diag,"(U2) f U2 R2 U2 R2 U' S R2 S' U' R2 f'
+F U R U2 R' U R U R' U R U2 R' U R U R' F'",TRUE,google.com
+ZBLL,U,Diag,M U' M' F R U R' U' F' M U M',TRUE,google.com
+ZBLL,U,Bars,"F U R U' R' S U f' R' f R U' R' f' R
+(U) R U2 r' F M' U' R U2 r' F R' F r",TRUE,google.com
+ZBLL,U,Bars,"(U) F R' F' R F2 L F L' F U' R U R' 
+R f' U' f R2 F R F' R U' f R f'",TRUE,google.com
+ZBLL,U,Bars,(U2) R2' F2 R F2' R U' R' U r' F r U' R,TRUE,google.com
+ZBLL,U,Bars,(U') F U R2 D' R U' R' D R2 F' R' U R,TRUE,google.com
+ZBLL,U,Bars,(U') S' R2 F R F' R U2 R' F' U2 F R S,TRUE,google.com
+ZBLL,U,Bars,"(U2) S' R B U2 B' R' U2 R B' R B R2 S 
+(U2) S' R B U2 B' R' U2 R U R2 F R F' U' S",TRUE,google.com
+ZBLL,U,Bars,"R' F' r U2 R B U B' r' S' r U2 r' f
+f R' F2 R S' R' U' F U r U2 R U' r' (U) R' B2 R2 U R' U R U' R2 B2 R U2 R U R'",TRUE,google.com
+ZBLL,U,Bars,(U') F' U F U' R B' R B R2 F R' F' R (U') F' L F L' F2 R' F' R F' U L' U' L,TRUE,google.com
+ZBLL,U,Bars,x' R2 U2 R' U2 R' F R F' r U' r' F R' x,TRUE,google.com
+ZBLL,U,Bars,(U') R' U' R F R2 D' R U R' D R2 U' F',TRUE,google.com
+ZBLL,U,Bars,(U') S' R2 B' R' B R' U2 R B U2 B' R' S (U') S' U F R' F' R2 U' R' U2 R B U2 B' R' S,TRUE,google.com
+ZBLL,U,Bars,"S' R' F' U2 F R U2 R' F R' F' R2 S
+(U) F U R U2 R' U R U R2 F' r U R U' r'",TRUE,google.com
+ZBLL,U,Checkers,"(U2) x R2 D2 R U2 R' D2 R U2 R x'
+(U2) R' F2 R U2 R U2 R' F2 R U2 R'",TRUE,google.com
+ZBLL,U,Checkers,"R U R' U R U' R' U2 R' D' R U2 R' D R2 U' R' 
+(U) B U' B' R' f' R U R' S U' R' F R2",TRUE,google.com
+ZBLL,U,Checkers,"R F U' R' U' R U2 R' U' R F' R'
+(U2) r D B' r' U' r B2 r' U' r D' r'",TRUE,google.com
+ZBLL,U,Checkers,(U) R U R' U R U' R U' r' F R' F' M',TRUE,google.com
+ZBLL,U,Checkers,R' U' R F U' R' U' R U F' U R' U R,TRUE,google.com
+ZBLL,U,Checkers,F R U' R' U R U R' U R U' R' F',TRUE,google.com
+ZBLL,U,Checkers,"x' R2 D2 R' U2 R D2 R' U2 R' x
+R B2 R' U2 R' U2 R B2 R' U2 R",TRUE,google.com
+ZBLL,U,Checkers,"(U) F' U F R b R' U' R S U R B' R2 (U') B' U B L f L' U' L S' U L F' L2
+(U') F U2 S R S' R' U R F' r' U F' U' r
+R' U F' r' U' F' R F R' F' U M' F R2",TRUE,google.com
+ZBLL,U,Checkers,"(U2) R' B' U R U R' U2 R U R' B R
+r' D' F r U r' F2 r U r' D r",TRUE,google.com
+ZBLL,U,Checkers,(U) R' U' R U' R' U R' U r f' U f M,TRUE,google.com
+ZBLL,U,Checkers,"L U L' F' U L U L' U' F U' L U' L'
+(U2) R U R' B' U R U R' U' B U' R U' R'
+(U2) R U R' f' L U L U' L' f U' R U' R'",TRUE,google.com
+ZBLL,U,Checkers,"(U') F2 U' R' F r2 U R2 F R U' M2 F
+standard inverse",TRUE,google.com
+ZBLL,U,Slash,(U2) R2 D R' U2 R D' R' U2 R',TRUE,google.com
+ZBLL,U,Slash,(U2) R2 D r' U2 r D' R' U2 R',TRUE,google.com
+ZBLL,U,Slash,(U) R U R2 D' R U R' D R2 U2 R',TRUE,google.com
+ZBLL,U,Slash,"(U2) F U' f' U' F R U R' U R U' R' F' U S R' U' R U R U R' U' R' U F R U R U' R' F'
+(U) R U' r' D' F r U R' U R U' r' F' D M'
+(U2) F' U2 R' U' R F U' R' U2 R F' U2 F",TRUE,google.com
+ZBLL,U,Slash,"(U') F U2 R' U' R F' R' U2 F U F' U' R
+
++F+ U2 (R' U' R) -F'- (R' U2) 
+xF U F' U' Rx",TRUE,google.com
+ZBLL,U,Slash,"(R U R') F' U' F2 (D R' U R' U' R D') F' 
+R S' U' R' U' R U' S R' F D R2 D' F'",TRUE,google.com
+ZBLL,U,Slash,(U) F R' F' U' F R S U R2 U' R' f' R F' U' R' F U r F R' F' r' F' R F,TRUE,google.com
+ZBLL,U,Slash,"(U) R U B2 U2 B2 R2 D' R U' R2 D R2 
+(U') R U R' U R U' R' U F' R U2 R' U2 R' F R",TRUE,google.com
+ZBLL,U,Slash,"(U2) S R2 S' D R' U2 R D' R U2 R2 U2 R 
+(U) F' M U2 M' F M U R' D' R U R' D r",TRUE,google.com
+ZBLL,U,Slash,(U2) S R U' R' U' F' U2 F U R U' R' S',TRUE,google.com
+ZBLL,U,Slash,R' U2 R U F' R' DU' R U R' D'U R F,TRUE,google.com
+ZBLL,U,Slash,"(U) R' F R F' U R' D' r U' r' DU' F' U F R
+R U' R' U' r U' M2 f R2 f' M2 U' r'",TRUE,google.com
+ZBLL,U,bACKSLASH,R2 D' R U2 R' D R U2 R,TRUE,google.com
+ZBLL,U,bACKSLASH,R2 D' r U2 r' D R U2 R,TRUE,google.com
+ZBLL,U,bACKSLASH,(U) R' U' R2 D R' U' R D' R2 U2 R,TRUE,google.com
+ZBLL,U,bACKSLASH,"(U) R U2 F U F' R' U F U2 F' R U2 R'
+(U') F' R U R U' R' F R' F R f' R U R' S R'",TRUE,google.com
+ZBLL,U,bACKSLASH,R' U2 F U F' R F U2 R' U' R U F',TRUE,google.com
+ZBLL,U,bACKSLASH,(U2) R' S' U R U R' U S R f' R' U2 R f,TRUE,google.com
+ZBLL,U,bACKSLASH,"(U2) R' F R U R' F' M U' F2 U F r 
+(U') F' R U F R' U' f' R' F R f R F' R'",TRUE,google.com
+ZBLL,U,bACKSLASH,"(U') R2 F' R U2 R U2 R' F U' R U R' U' R
+(U) S' R' U' R S2 U' R' U B' D' R D R F",TRUE,google.com
+ZBLL,U,bACKSLASH,S R2 S' D' R U2 R' D R' U2 R2 U2 R' (U') F U M U M' F' M U' r F R' U' R F' R',TRUE,google.com
+ZBLL,U,bACKSLASH,(U) R U B' R' F' R B R' F U R U2 R' S R' U R U f R2 f' U' R' U R S',TRUE,google.com
+ZBLL,U,bACKSLASH,"(U') F U2 F' U' R F E R' U' R E' F' R' 
+(U2) R U2 R' U' B R D'U R' U' R DU' R' B'",TRUE,google.com
+ZBLL,U,bACKSLASH,"R2 F2 R U' S' R U2 R' f R' u' R u R2
+(U2) R' U R U r' U M2 F' U2 F M2 U r
+F U R U' R D R' U' R D' R2 U R U R' F'",TRUE,google.com
+ZBLL,L,cp solved,"(U') F' R F R2 D' R U2 R' D R2 F' R' F 
+r' F R F' r U r' F' r U R' U' r' F r",TRUE,google.com
+ZBLL,L,cp solved,(U) r' F2 r U r' F M' U' R U' R' U2 R,TRUE,google.com
+ZBLL,L,cp solved,R U R' U R U2 R' U R' U' R U' R' U2 R,TRUE,google.com
+ZBLL,L,cp solved,"(U) f R' U R' U' R D' R U R' E' R' x
+(U') F U' R U' R' U r' F R F' M' F'",TRUE,google.com
+ZBLL,L,cp solved,(U) F' M F' r U R' U r' F' r U' F,TRUE,google.com
+ZBLL,L,cp solved,R U2 R' U' R U' R' U R' U2 R U R' U R,TRUE,google.com
+ZBLL,L,cp solved,"(U2) R U R' U R U' R' U R U' R' U R U2 R'
+(U) R' U2 R U R' U' R U R' U' R U R' U R",TRUE,google.com
+ZBLL,L,cp solved,R U R' U R U2 M' B2 r' U' r B' r',TRUE,google.com
+ZBLL,L,cp solved,"(U) L' U' L U' L' U2 L U R U R' U R U2 R'
+R' U' R U' R' U2 R U' R U R' U R U2 R'",TRUE,google.com
+ZBLL,L,cp solved,(U2) F' U r' F r U' R U' r' F M' F,TRUE,google.com
+ZBLL,L,cp solved,F M F R' F' r U' R U R' U F',TRUE,google.com
+ZBLL,L,cp solved,(U') R' U2 R U R' U R U' R U2 R' U' R U' R',TRUE,google.com
+ZBLL,L,d opp r,F R' F' r U R U' r',TRUE,google.com
+ZBLL,L,d opp r,(U) R2 D r' U2 M' U' R D' R' U' R' F R' F' R U' S U R' U' S' R' U R,TRUE,google.com
+ZBLL,L,d opp r,(U') F' L' U L U L' U2 L U F,TRUE,google.com
+ZBLL,L,d opp r,F R U R' U' R' F' R U2 R U2 R',TRUE,google.com
+ZBLL,L,d opp r,(U') S' R U R' F' U f U' R' U' R' U R,TRUE,google.com
+ZBLL,L,d opp r,(U) S R' F U R2 U' F' U R2 U' R S',TRUE,google.com
+ZBLL,L,d opp r,"F R' F' R2 S' R' U R S U' R' 
+(U') R F U' R' U R U R' U R U' F' R'",TRUE,google.com
+ZBLL,L,d opp r,"(U) L U L' F' U L U L' U' F L U2 L'
+(U2) R' U2 R U2D' R U' R U R U' R2 D",TRUE,google.com
+ZBLL,L,d opp r,"(U') R U R' U R U' R' U' r' F R F' M'
+(U) L U L' U L U' L' F' L U' L' U F",TRUE,google.com
+ZBLL,L,d opp r,"R2 S2 R2 U R2 S2 D R' U R D' R' U' R' 
+(U2) F U' f' U2 f R' U' F R F' R2 U R F'",TRUE,google.com
+ZBLL,L,d opp r,"S U2 R' U2 R U2 F R f'
+(U2) S' R' U2 R S U2 f R f'",TRUE,google.com
+ZBLL,L,d opp r,(U) M U' M' F R' F' R U R U' r' U M',TRUE,google.com
+ZBLL,L,d opp l,F' r U R' U' r' F R,TRUE,google.com
+ZBLL,L,d opp l,(U) R2 D' r U2 M U R' D R U R,TRUE,google.com
+ZBLL,L,d opp l,(U) F R U' R' U' R U2 R' U' F',TRUE,google.com
+ZBLL,L,d opp l,F' R U2 R' U2 R' F R U R U' R',TRUE,google.com
+ZBLL,L,d opp l,(U') S' R' U' R f R' F' U R U R U' R',TRUE,google.com
+ZBLL,L,d opp l,(U) S R B' U' R2 U B U' R2 U R' S',TRUE,google.com
+ZBLL,L,d opp l,(U2) f' U f R2 S' R U' R' S U R (U') R' B' U R U' R' U' R U' R' U B R,TRUE,google.com
+ZBLL,L,d opp l,(U') R' U' R F U' R' U' R U F' R' U2 R,TRUE,google.com
+ZBLL,L,d opp l,"(U) r' F' r U' r' F r U R U' r' F M'
+(U') R' U' R U' R' U R F R' U R U' F'",TRUE,google.com
+ZBLL,L,d opp l,(U) R U r' F R' F' r U' R U R' U2 R U2 R',TRUE,google.com
+ZBLL,L,d opp l,"S' R U2 R' S U2 F' U' F
+(U2) S U2 R U2 R' U2 f' U' F",TRUE,google.com
+ZBLL,L,d opp l,"(U') M U M' F' r U r' U' r' F R U' M'
+(U) M' U M f' U f R' U' R' U r U' M",TRUE,google.com
+ZBLL,L,l diag,"F R U R2 F R F' R U' R' F'
+(U') F R U R' F R' F' R2 U' R' F'",TRUE,google.com
+ZBLL,L,l diag,r U2 R2 F R F' R U2 r',TRUE,google.com
+ZBLL,L,l diag,"(U) M' U R' F2 r F' r' F2 R2 U' r'
+r' U' M' U' R U r' R' F R F' U r",TRUE,google.com
+ZBLL,L,l diag,r U2 r2' F R F' rM' U2 r',TRUE,google.com
+ZBLL,L,l diag,"(U2) r' F2 r U R U2 r' F' M' U' R U' R'
+r' F' r U' M F' R' F2 r U R U2 R'",TRUE,google.com
+ZBLL,L,l diag,L' U R2 D' R' U2 R D R' U L U R' R U2 R2 F R F2 r' U' F2 U r F,TRUE,google.com
+ZBLL,L,l diag,"(U') R U2 R2 U' R' U R2 D' R U' R' DU' R'
+F U' R' U R D R' U R D'U F' R' U R R'M' U' R U r' R' F R U F U' R' F' R2",TRUE,google.com
+ZBLL,L,l diag,(U) l' U2 L2 F' L' F L' U2 l,TRUE,google.com
+ZBLL,L,l diag,"M' U' r U2 R' F R U2 r2 F R
+R' F' r2 U2 R' F' R U2 r' U M",TRUE,google.com
+ZBLL,L,l diag,(U') r U2 r'M F R' F' r2 U2 r',TRUE,google.com
+ZBLL,L,l diag,(U) R U R' U M F r U2 R' U' r' F2 r (U') R U2 R' U' r' F2 R F M' U r' F r,TRUE,google.com
+ZBLL,L,l diag,(U') L U' R2 D R U2 R' D' R U' L' U' R,TRUE,google.com
+ZBLL,L,d same r,R U2 R D R' U2 R D' R2,TRUE,google.com
+ZBLL,L,d same r,R U2 R D r' U2 r D' R2,TRUE,google.com
+ZBLL,L,d same r,(U) R U2 R2 D' R U' R' D R2 U' R',TRUE,google.com
+ZBLL,L,d same r,F' U2 F R' U2 R U F' R' U R U2 F,TRUE,google.com
+ZBLL,L,d same r,R' U F U' F' U2 R F R' U R U2 F',TRUE,google.com
+ZBLL,L,d same r,"R u R2 D' F' R S' U R' U R U S R'
+(U) R U R' U R U R' U2 R' D' r U2 r' D R",TRUE,google.com
+ZBLL,L,d same r,(U') f R U R2 U' S' R' F' U F R F',TRUE,google.com
+ZBLL,L,d same r,(U') R2 D' R2 U R' D R2 B2 U2 B2 U' R' (U) R' F' R U2 R U2 R' F U' R U R' U' R U' R' (U) f R D R D' F' U R' U' S2 R U' R' S,TRUE,google.com
+ZBLL,L,d same r,R' U2 R2 U2 R' D R' U2 R D' S R2 S' (U) r' D' R U' R' D R U' M' F' M U2 M' F,TRUE,google.com
+ZBLL,L,d same r,S R U R' U' F' U2 F U R U R' S',TRUE,google.com
+ZBLL,L,d same r,"(U) S R' U' F R' F' R2 U F R F' U2 S'
+F' R' U'D R U' R' UD' R F U' R' U2 R",TRUE,google.com
+ZBLL,L,d same r,(U) R2 S2 R' U2 R' U' R2 D R' U' R D' S2 R2 r U M2 f R2 f' M2 U r' U R U R' (U) R' F' U' F UD' r U r' D R U' F R' F' R,TRUE,google.com
+ZBLL,L,d same l,(U2) R' U2 R' D' R U2 R' D R2,TRUE,google.com
+ZBLL,L,d same l,(U2) R' U2 R' D' r U2 r' D R2,TRUE,google.com
+ZBLL,L,d same l,(U) R' U2 R2 D R' U R D' R2 U R,TRUE,google.com
+ZBLL,L,d same l,(U') R U2 R' F U2 F' U' R F U' F' U2 R',TRUE,google.com
+ZBLL,L,d same l,(U') F U' R' U R U2 F' R' F U' F' U2 R,TRUE,google.com
+ZBLL,L,d same l,(U) f' R' U2 R f R' S' U' R U' R' U' S R,TRUE,google.com
+ZBLL,L,d same l,r' F' U' F2 U M' F R U' R' F' R (U) R F R' f' R' F' R f U R F' U' R' F,TRUE,google.com
+ZBLL,L,d same l,(U2) R' U R U' R' U F' R U2 R' U2 R' F R2,TRUE,google.com
+ZBLL,L,d same l,"(U2) R U2 R2 U2 R D' R U2 R' D S R2 S' 
+(U') R F R' U R F' r' U M' F M U' M' U' F'",TRUE,google.com
+ZBLL,L,d same l,(U2) S R' U' R U f R2 f' U' R' U' R S',TRUE,google.com
+ZBLL,L,d same l,"(U') R F E R' U R E' F' R' U F U2 F'
+B R UD' R' U R U'D R' B' U R U2 R'
+M F U R' F R F2 U' R' F' R U2 M'",TRUE,google.com
+ZBLL,L,d same l,"(U) R2 S2 R U2 R U R2 D' R U R' D S2 R2 (U2) R' U2 R' D' R U2 R' D r2 U M U2 M' U M2
+(U2) r' U' M2 F' U2 F M2 U' r U' R' U' R (U) F R U' R' U' R2 D R' U R D' R' U R' U' F'",TRUE,google.com
+ZBLL,H,in line,R U R' U R U L' U R' U' L,FALSE,google.com
+ZBLL,H,in line,"(U') R2 U' R2 U F R2 U R2 U' F' R2 U R2
+(U2) r' F R U2 M' U r' F' R U2 F' r U R'",FALSE,google.com
+ZBLL,H,in line,(U2) M' F' r U R' U2 F2 r' F' R F' M,FALSE,google.com
+ZBLL,H,in line,(U') r' U r F' r2 F' r' U' r' F2 R U2 R',FALSE,google.com
+ZBLL,H,in line,(U') R U R2 F R F' r U' r' U r U r',FALSE,google.com
+ZBLL,H,in line,"(U2) F R' F' U2 R U2 R F R' F' U2 R2 U2 R
+F R' F' R U R U' B M' B r' U' R B' R'
+f' U f R' U' R' U F' M F' r U R' F R",FALSE,google.com
+ZBLL,H,in line,"L' U' L U' L' U' R U' L U R' 
+(U2) R' U' R U' R' U' r f' U f r'",FALSE,google.com
+ZBLL,H,in line,"(U) R2 U R2 U' B' R2 U' R2 U B R2 U' R2 
+(U2) R U' r' U2 M' U' R U r' U2 F R' F' r",FALSE,google.com
+ZBLL,H,in line,(U) S' R f' U' F U2 R2 f R F' R S,FALSE,google.com
+ZBLL,H,in line,"(U') R' U R U' F R2 U F' R F R U' F' R2
+(U') r U' r' B r2 B r U r B2 R' U2 R",FALSE,google.com
+ZBLL,H,in line,(U') R' F R' F' R2 U' r' U r U' r' U' r,FALSE,google.com
+ZBLL,H,in line,"F U R' F2 U' R F' R' U r U r' F R F'
+(U) r U R' U' F' U F r' F R F' U2 R U R'",FALSE,google.com
+ZBLL,H,bad,F R U' R' U R U2 R' U' R U R' U' F',TRUE,google.com
+ZBLL,H,bad,(U') F' r U R' U' r' F R2 U2 R' U' R U' R',TRUE,google.com
+ZBLL,H,bad,"(U') r' F2 M' D R2 U R2 D' F2 R
+f' r2 S' D r2 U r2 D' r2 F",TRUE,google.com
+ZBLL,H,bad,L U' R2 D' R U2 R' D R U' L' U' R,TRUE,google.com
+ZBLL,H,bad,(U2) R F R2 U' R2 U' R2 U2 R2 U' F' R',TRUE,google.com
+ZBLL,H,bad,"(U) R U2 R2 F U' R2 U' R2 U F' U R
+r' F R F' r U' R' U2 r' F R F' M'",TRUE,google.com
+ZBLL,H,bad,"(U) R UD' R U R2 F2 R D R' U'D' F2 D R
+(U) F R U R' U' R' F' U2 R U R' U R2 U2 R'",TRUE,google.com
+ZBLL,H,bad,"(U2) f R U R' U' S' R U' R' U R U R' F'
+(U) F l' U' L U l F' L2 U2 L U L' U L",TRUE,google.com
+ZBLL,H,bad,f R2 S' U' R2 U' R2 U R2 F' (U2) F U2 S R' U2 R' U2 R U2 f',TRUE,google.com
+ZBLL,H,bad,(U2) r U2 R D R' U' R U' D' r' F R' F' (U2) L' U R2 D R' U2 R D' R' U L U R',TRUE,google.com
+ZBLL,H,bad,"R' B' R2 U R2 U R2 U2 R2 U B R
+(U2) F U' R U2 R' U2 R U' R' U' R U R' U F'",TRUE,google.com
+ZBLL,H,bad,"(U) R' U2 R2 B' U R2 U R2 U' B U' R'
+f U R U' R' U R U' F' R U R' U' R' S'",TRUE,google.com
+ZBLL,H,diag,(U) F U R U' R' U R U' R' U R U' R' F',FALSE,google.com
+ZBLL,H,diag,f R f' U R' U R U' R2 F R F' R,FALSE,google.com
+ZBLL,H,diag,"(U) R U' R2 U' F2 U' R2 U R2 U F2 R2 U R' 
+(U2) R2 F' D R2 UD' R2 F2 U' F r R U2 M",FALSE,google.com
+ZBLL,H,diag,"R' U' R' B2 U' R U' R' U2 B2 R2 U' R' U2 R F' U r U R'M' U F2 U' MR U' r' U' F
+F' U' r U' r2 F r U' F R U' R' r' F r F",FALSE,google.com
+ZBLL,H,diag,"F R' F R F' R U2 R' F R' F' R F'
+R U' L' U R' U' L R U' L' U R' U' L
+x' U' R U' R' U R' F2 R U' R U R' U",FALSE,google.com
+ZBLL,H,diag,R' F R' F' R2 U R' U' R U' f R' f',FALSE,google.com
+ZBLL,H,diag,(U) R U' R2 F2 U' R2 U' R2 U F2 U R2 U R' (U') S' R' U' R F R' U' R f R' F' U' R U2 F' (U2) M' U2 r' R' F' U F2 R2 DU' R2 D' F R2,FALSE,google.com
+ZBLL,H,diag,"R U R F2 U R' U R U2 F2 R2 U R U2 R'
+F U' R' F' rM' U' F2 U Mr' F R U F'
+F U R' F R2 U' R' U F' r' F r R U' R' F'
+R' U' R F U' R' U' R U F' R' U' r B' R B r'",FALSE,google.com
+ZBLL,H,cp solved,"F' R U' F' R2 U2 F U2 R F' U R F2 U2 R'
+(U) R F' U R F2 U2 R' U2 F' R U' F' R2 U2 F
+(U) S R' U2 R U R' U' R U2 R U R U' R' U S'
+(U) S R2 S' R U2 R U R' U' R U2 R U R U' R'",TRUE,google.com
+ZBLL,H,cp solved,"(U') R U2 R' U' R U R' U' R U' R'
+(U') L U2 L' U' L U L' U' L U' L'",TRUE,google.com
+ZBLL,H,cp solved,R U R' U R U' R' U R U2 R',TRUE,google.com
+ZBLL,H,cp solved,"(U) R' U2 R U R' U R U R U R' U R U2 R'
+R' U' R' f' U' R' U2 R F U R U R' S 
+(U) R S2 R U2 R' U2 R S R2 S R'",TRUE,google.com
+ZBLL,H,cp solved,"(U) rM' U' r' U' r U Mr' U r U r' 
+(U) R' F R U R'M' F R U' R' F' RM
+(U) M'R' F R U R' F' MR U' R' F' R 
+R U R' U R U2 R' U' R' U2 R U R' U R",TRUE,google.com
+ZBLL,H,cp solved,(U') R' U2 R U R' U' R U R' U R,TRUE,google.com
+ZBLL,H,cp solved,"R' U' R U' R' U R U' R' U2 R
+(U2) L' U' L U' L' U L U' L' U2 L",TRUE,google.com
+ZBLL,H,cp solved,"(U) R U2 R' U' R U' R' U' R' U' R U' R' U2 R
+(U) R' S2 R' U2 R U2 R' S R2 S R",TRUE,google.com
+ZBLL,Pi,CP Solved,"S R' U2 R2 U S R2 S' U' R2 U2 R S'
+(U2) M' F U R U' R' U R U' R2 F' M F R F'",TRUE,google.com
+ZBLL,Pi,CP Solved,R' U2 R2 U R2 U R2 U2 R',TRUE,google.com
+ZBLL,Pi,CP Solved,(U') R U2 R' U2 R U' R' U2 R U' R' U2 R U R',TRUE,google.com
+ZBLL,Pi,CP Solved,"F' U' L' U L S' U' L' U L f
+(U2) B' U' R' U R S U' R' U R F",TRUE,google.com
+ZBLL,Pi,CP Solved,"(U) R U2 R' U' R U' R2 U' R U' R' U2 R
+(U') M F R' F' M' F' R U2 R U2 R' F",TRUE,google.com
+ZBLL,Pi,CP Solved,(U2) R U' R' U2 R U R' U2 R U R' U2 R U2 R',TRUE,google.com
+ZBLL,Pi,CP Solved,"R U2 R2 U' S R2 S' U' R2 U2 R
+(U) R U R' U R U2 R' U R U R' U R U2 R'",TRUE,google.com
+ZBLL,Pi,CP Solved,"R U2 R2 U' R2 U' R2 U2 R
+(U2) L U2 L2 U' L2 U' L2 U2 L",TRUE,google.com
+ZBLL,Pi,CP Solved,"(U) R' U2 R U2 R' U R U2 R' U R U2 R' U' R
+(U2) S U' F R F' R2 F R F' R U F R' f'",TRUE,google.com
+ZBLL,Pi,CP Solved,(U2) F U R U' R' S U R U' R' f',TRUE,google.com
+ZBLL,Pi,CP Solved,"(U) R U R' U R U2 R2 U2 R U R' U R 
+(U') F' R U2 R' U2 R' F M F R F' M'",TRUE,google.com
+ZBLL,Pi,CP Solved,(U2) R' U R U2 R' U' R U2 R' U' R U2 R' U2 R (U2) f R F' U' R' F R' F' R2 F R' F' U S',TRUE,google.com
+ZBLL,Pi,Diag,"(U2) R' F R U R' U' R' F' R2 F R' U R U' F'
+R UD' R U R' D R' U' R U' R S R2 S'
+(U2) R U R' U R U2 R2 U2 R F U' R' U' R U F'",TRUE,google.com
+ZBLL,Pi,Diag,"(U2) S' R U R' S U R U' B U' B' R' 
+R' F' U' F U' R U S' R' U R S",TRUE,google.com
+ZBLL,Pi,Diag,"F R2 U' R U' R U' R' U2 R' U R2 F'
+(U2) R U R' U R U' B U' B' U R' S' R U' R' S",TRUE,google.com
+ZBLL,Pi,Diag,(U2) L U L' U' F L F' U2 F L' F' U L U' L' R U R' U' f D f' U2 f D' f' U R U' R',TRUE,google.com
+ZBLL,Pi,Diag,(U2) R F' U' R2 U' F U F' R2 U F R',TRUE,google.com
+ZBLL,Pi,Diag,R F' U' R2 F U' F' U R2 U F R',TRUE,google.com
+ZBLL,Pi,Diag,"(U) R U2 R' U2 R' F R' B' R2 F' R B R'
+(U') R U R' U r' F R F' r U' R' U R U2 R'",TRUE,google.com
+ZBLL,Pi,Diag,(U2) S' R' U' R S U' R' U F' U F R,TRUE,google.com
+ZBLL,Pi,Diag,"(U2) F R2 U' R U2 R U R' U R' U R2 F'
+(U2) R' U' R U' R' U F' U F U' R S' R' U R S",TRUE,google.com
+ZBLL,Pi,Diag,R' U' R U F' R' F U2 F' R F U' R' U R,TRUE,google.com
+ZBLL,Pi,Diag,(U') F' R U F2 U R' U' R F2 U' R' F,TRUE,google.com
+ZBLL,Pi,Diag,(U) F' R U F2 R' U R U' F2 U' R' F,TRUE,google.com
+ZBLL,Pi,Vertical,"(U') R' F' R U' r' F M' F U' R U R f' U' f
+(U2) R' U2 R2 U2 F R F' R' U2 R' U2 F R F' 
+(U) R B R' U r B' M B' U R' U' R' F R F'
+(U') F U R U2 R' U R U R' F' R U2 R' U' R U' R'",FALSE,google.com
+ZBLL,Pi,Vertical,r U' r' U' r U r' F R' F' R2 U' R',FALSE,google.com
+ZBLL,Pi,Vertical,(U2) r' F R F' r U' R' U' R U' R',FALSE,google.com
+ZBLL,Pi,Vertical,(U) M' F R' F r F2 U2 R U' r' F M,FALSE,google.com
+ZBLL,Pi,Vertical,(U2) R U2 R' F2 r U r F r2 F r' U' r,FALSE,google.com
+ZBLL,Pi,Vertical,(U) R2 U' R2 F U R2 U' R2 F' U' R2 U R2 R U' r' F U2 R' F r U' M U2 R' F' r,FALSE,google.com
+ZBLL,Pi,Vertical,"(U') F R' F' r U' r' U' R F R' U F2 R U' F'
+(U2) R U' R' U2 F R' F' r F' U' F U R U' r'",FALSE,google.com
+ZBLL,Pi,Vertical,r' U r U r' U' r U R2 F R F' R,FALSE,google.com
+ZBLL,Pi,Vertical,"l F' L' F l' U L U L' U L
+(U') R U R' U F' R U2 R' U2 R' F R",FALSE,google.com
+ZBLL,Pi,Vertical,S' R' F R' f' R2 U2 F' U f R' S,FALSE,google.com
+ZBLL,Pi,Vertical,"(U2) R2 F U R' F' R' F U' R2 F' U R' U' R
+(U2) R' U2 R B2 r' U' r' B' r2 B' r U r'",FALSE,google.com
+ZBLL,Pi,Vertical,(U') R2 U R2 B' U' R2 U R2 B U R2 U' R2 (U2) r' F R F' U2 r U' R' U M U2 r U R',FALSE,google.com
+ZBLL,Pi,Checkers,,FALSE,google.com
+ZBLL,Pi,Checkers,"(U') R' D' F2 DU R D' R' F2 R2 U' R' DU' R' 
+(U') f R U' R' U f' R U2 r' F' M' U' R U' R'
+(U) R U2 R2 U' R U' R' U2 F R U R U' R' F'
+(U') R U R' U R U2 R' F U R U2 R' U R U R' F'",FALSE,google.com
+ZBLL,Pi,Checkers,"R' F2 D R2 U' R2 D' M F2 r
+(U) F' r2 D r2 U' r2 D' S r2 f 
+R' U' F' R U R' U' R' F R2 U2 R' U2 R",FALSE,google.com
+ZBLL,Pi,Checkers,"(U) R' U L U R' D' R U2 R' D R2 U L'
+(U') r' U' R' F' r U' R U F r' U r U2 F'",FALSE,google.com
+ZBLL,Pi,Checkers,(U') R F U R2 U2 R2 U R2 U R2 F' R',FALSE,google.com
+ZBLL,Pi,Checkers,"(U') R' U' F U' R2 U R2 U F' R2 U2 R'
+(U) M F R' F' r U2 R U r' F R' F' r",FALSE,google.com
+ZBLL,Pi,Checkers,(U') L' U' L U' L' U2 L2 F l' U' L' U l F',FALSE,google.com
+ZBLL,Pi,Checkers,(U) F U R U' R' U R U2 R' U' R U R' F',FALSE,google.com
+ZBLL,Pi,Checkers,"(U) F R2 U' R2 U R2 U S R2 f'
+(U') f U2 R' U2 R U2 R S' U2 F'",FALSE,google.com
+ZBLL,Pi,Checkers,(U2) F R F' r D U R' U R D' R' U2 r',FALSE,google.com
+ZBLL,Pi,Checkers,"(U2) R' B' U' R2 U2 R2 U' R2 U' R2 B R 
+(U') F U' R U' R' U R U R' U2 R U2 R' U F'
+(U2) F' U S U2 F R' U2 R U2 R f' U F",FALSE,google.com
+ZBLL,Pi,Checkers,"(U) R U B' U R2 U' R2 U' B R2 U2 R
+S R U R U' R' F U R' U' R U R' U' f'",FALSE,google.com
+ZBLL,Pi,Slash,"(U2) R U2 R' F R' F r U r' F2 R F' 
+(U') F' r U2 R' U R U r' F r' F2 r",FALSE,google.com
+ZBLL,Pi,Slash,"R' F R U R2 U' F' U R U' R U f R f' 
+r' F' r U r U2 r' F2 U' R U R' U' R U' R'
+(U') F' U' F R U R' F R' F' R2 U R' U' R U' R'",FALSE,google.com
+ZBLL,Pi,Slash,"R U' F R' U F R F2 R2 F R U' F' 
+(U) R' U' F R F2 R2 F R U F' R U' F 
+(U) F R' U R S U' R' U f' U F U2 S R' f' 
+(U') S R' F U2 R' F' R2 F R U2 R f'",FALSE,google.com
+ZBLL,Pi,Slash,(U') M F R' U2 F R F2 R' F' U2 F' r (U') R' U2 R' B2 R2 U R' U R U' R2 B2 R2,FALSE,google.com
+ZBLL,Pi,Slash,(U') R U R' U F2 R U2 R' U2 R' F2 R,FALSE,google.com
+ZBLL,Pi,Slash,"(U) F U R U r' F R' F' r F' r' F r 
+R U R' U R U2 R' U' R U' L' U R' U' L",FALSE,google.com
+ZBLL,Pi,Slash,"(U2) r' F2 r F' r U' R' U' R U2 r' F 
+(U) F R' F2 r U' r' F' R F' R U2 R'",FALSE,google.com
+ZBLL,Pi,Slash,(U') f R' f' U' R' U R' U' F U R2 U' R' F' R,FALSE,google.com
+ZBLL,Pi,Slash,r' F U2 F R F2 R' F' U2 R F' M' (U') R2 B2 R2 U R' U' R U' R2 B2 R U2 R (U') F' U R' F U' R' F' R2 F2 R' F' U R,FALSE,google.com
+ZBLL,Pi,Slash,(U2) F U R' F' R2 F2 R' F' U' R F' U R',FALSE,google.com
+ZBLL,Pi,Slash,(U') R' U' R U' B2 R' U2 R U2 R B2 R',FALSE,google.com
+ZBLL,Pi,Slash,"(U2) R' F2 R U2 R U2 R' F2 U' R U' R'
+(U') F' U' r' F' R F' r U R' F R U' R'",FALSE,google.com
+ZBLL,Pi,Backslash,"(U2) r' F2 r F' r U' R' U' R U2 r' F 
+(U) F R' F2 r U' r' F' R F' R U2 R'",FALSE,google.com
+ZBLL,Pi,Backslash,(U') f R' f' U' R' U R' U' F U R2 U' R' F' R,FALSE,google.com
+ZBLL,Pi,Backslash,r' F U2 F R F2 R' F' U2 R F' M' (U') R2 B2 R2 U R' U' R U' R2 B2 R U2 R (U') F' U R' F U' R' F' R2 F2 R' F' U R,FALSE,google.com
+ZBLL,Pi,Backslash,(U2) F U R' F' R2 F2 R' F' U' R F' U R',FALSE,google.com
+ZBLL,Pi,Backslash,(U') R' U' R U' B2 R' U2 R U2 R B2 R',FALSE,google.com
+ZBLL,Pi,Backslash,"(U2) R' F2 R U2 R U2 R' F2 U' R U' R'
+(U') F' U' r' F' R F' r U R' F R U' R'",FALSE,google.com
+ZBLL,Pi,Backslash,(U') R B2 R' U R2 B2 R' U' R' U' R2 B2 R2,FALSE,google.com
+ZBLL,Pi,Backslash,(U') R U2 R' U' R U' R2 U r B' R B r',FALSE,google.com
+ZBLL,Pi,Backslash,"(U2) R' F2 R F' r U' r' F M' U r' F2 R F' 
+(U2) F R' F' U' F U' R2 U R' S' R' U R SF'",FALSE,google.com
+ZBLL,Pi,Backslash,(U') F U R U' R' U R U' R2 F' R U R U' R',FALSE,google.com
+ZBLL,Pi,Backslash,(U') M F R' F' r U2 R U' R' U R U2 R',FALSE,google.com
+ZBLL,Pi,Backslash,(U2) R' U2 R U R' U' R U F R' U R U' F',FALSE,google.com
+1LLL,,cp solved,F U' R2 D R' U' R D' R2 U F',TRUE,google.com
+1LLL,,cp solved,F U' R2 D R' U2 R D' R2 U F',TRUE,google.com
+1LLL,,cp solved,F R' F' R U R U' R' U' R U' L' U R' U' L,TRUE,google.com
+1LLL,,cp solved,R U' R' U' R U R2 F R2 U R' U' R' F' R,TRUE,google.com
+1LLL,,cp solved,L' U R U' L U R' U R U R' U' R' F R F',TRUE,google.com
+1LLL,,cp solved,R' F R U R U' R2 F' R2 U' R' U R U R',TRUE,google.com
+1LLL,,cp solved,L' U' L U L F' L' F,TRUE,google.com
+1LLL,,cp solved,F' L F L' U' L' U L,TRUE,google.com
+1LLL,,cp solved,F R U' R' U' R U R' F',TRUE,google.com
+1LLL,,cp solved,F' L' U L U L' U' L F,TRUE,google.com
+1LLL,,cp solved,F U' R2 D R' U R D' R2 U F',TRUE,google.com
+,OLL,cp solved,R U R' U R U' R' U R U2 R',TRUE,google.com
+,OLL,cp solved,R' U2 R2 U R2' U R2 U2 R',TRUE,google.com
+,OLL,cp solved,R2 D R' U2 R D' R' U2 R',TRUE,google.com
+,OLL,cp solved,R' F' r U R U' r' F,TRUE,google.com
+,OLL,cp solved,F' r U R' U' r' F R,TRUE,google.com
+,OLL,cp solved,r' F' r U' r' F2 r,TRUE,google.com
+,OLL,cp solved,R U R' U R U2 R',TRUE,google.com
+,OLL,cp solved,R' F R S R' F' R S',TRUE,google.com
+,OLL,cp solved,R U' R' S' R U R' S,TRUE,google.com
+,OLL,cp solved,R U2 (R2 F R F') U2 (R' F R F'),TRUE,google.com
+,OLL,cp solved,R U' R2' D' r U r' D R2 U R',TRUE,google.com
+,OLL,cp solved,R' F2 R2 U2 R' F R U2 R2 F2 R,TRUE,google.com
+,OLL,cp solved,R' F2 R2 U2' R' F' R U2' R2' F2 R,TRUE,google.com
+,OLL,cp solved,F R' F' R U S' R U' R' S,TRUE,google.com
+,OLL,cp solved,F S' R U' R' S R U2' R' U' F',TRUE,google.com
+,OLL,cp solved,S' R U R' S U' R' F R F',TRUE,google.com
+,OLL,cp solved,S' R U R' S U' M' U R U' r',TRUE,google.com
+,OLL,cp solved,R' U' F' U F R,TRUE,google.com
+,OLL,cp solved,F U R U' R' F',TRUE,google.com
+,OLL,cp solved,R' U' F U R U' R' F' R,TRUE,google.com
+,OLL,cp solved,S R U R' U' R' F R f',TRUE,google.com
+,OLL,cp solved,(R U R' U') (R' F R F'),TRUE,google.com
+,OLL,cp solved,F R U R' U' F',TRUE,google.com
+,OLL,cp solved,F R' F' R U2 R U' R' U R U2' R',TRUE,google.com
+,OLL,cp solved,f U R U' R' U R U' R' f',TRUE,google.com
+,OLL,cp solved,R B' R2 F R2 B R2' F' R,TRUE,google.com
+,OLL,cp solved,R' F R2 B' R2' F' R2 B R',TRUE,google.com
+,OLL,cp solved,R' F' r U' r' F r U' r' F2 R,TRUE,google.com
+,OLL,cp solved,r U R' U R U' R' U R U2 r',TRUE,google.com
+,OLL,cp solved,f' r U r' U' r' F r S,TRUE,google.com
+,OLL,cp solved,f R' F' R U R U' R' S',TRUE,google.com
+,OLL,cp solved,f R f' U' r' U' R U M',TRUE,google.com
+,OLL,cp solved,R' U' R' F R F' U R,TRUE,google.com
+,OLL,cp solved,r' U2 R U R' U r,TRUE,google.com
+,OLL,cp solved,r U2 R' U' R U' r',TRUE,google.com
+,OLL,cp solved,r U R' U R U2 r',TRUE,google.com
+,OLL,cp solved,R' F' r U' r' F2 R,TRUE,google.com
+,OLL,cp solved,S R U R' U R U2 R' U2 S',TRUE,google.com
+,OLL,cp solved,S' r' F' r U' r' F2 r U2 S,TRUE,google.com
+,OLL,cp solved,R U2 R2' F R F' R U2 R',TRUE,google.com
+,OLL,cp solved,F R' F' R U R U' R',TRUE,google.com
+,OLL,cp solved,R U2' R' U' S' R U' R' S,TRUE,google.com
+,OLL,cp solved,F U F' R' F R U' R' F' R,TRUE,google.com
+,OLL,cp solved,F U R U' R2' F' R U R U' R',TRUE,google.com
+,OLL,cp solved,R' F R U R' F' R F U' F',TRUE,google.com
+,OLL,cp solved,R' F' R r' F' r U R' F R,TRUE,google.com
+,OLL,cp solved,r U r' R U R' U' r U' r',TRUE,google.com
+,OLL,cp solved,F U R U' R' U R U' R' F',TRUE,google.com
+,OLL,cp solved,R' F' U' F U' R U R' U R,TRUE,google.com
+,OLL,cp solved,R' F R U R U' R2 F' R2 U' R' U R U R',TRUE,google.com
+,OLL,cp solved,R' F' R U' r' F r M' U' r' F2 R,TRUE,google.com
+,OLL,cp solved,L' U' L U' L' U L U L F' L' F,TRUE,google.com
+,OLL,cp solved,R U R' U R U' R' U' R' F R F',TRUE,google.com
+,OLL,cp solved,S' R U R' U' R' F R F' U S,TRUE,google.com
+,OLL,cp solved,r' D' r U' r' D r2 U' r' U r U r',TRUE,google.com
+,OLL,cp solved,S U' R' F' U' F U R S',TRUE,google.com
+,OLL,cp solved,S' F R U R' U' F' U S,TRUE,google.com
+,OLL,cp solved,"other
+3
+angles",TRUE,google.com
+,OLL,cp solved,"other
+3
+angles",TRUE,google.com
+,OLL,cp solved,"AUF Trick: M' U M U2 M' U M
+AUF Trick: S' R U' R' S R U R'",TRUE,google.com
+,OLL,cp solved,AUF Trick: R U R' U' M' U R U' r',TRUE,google.com
+,OLL,cp solved,AUF Trick: R U' R2' D' r U' r' D R2 U R',TRUE,google.com
+,OLL,cp solved,Anti-Diag: R' F' R U2' r' F2 r U2' R' F R,TRUE,google.com
+,OLL,cp solved,AUF Trick: F R' F' R U R U' R' U' R U R' U' R' F R F',TRUE,google.com
+,OLL,cp solved,AUF Trick: R' F R F' U' S R' U' R U R S',TRUE,google.com
+,OLL,cp solved,Anti-Diag: F' r U r' U' r' F r S,TRUE,google.com
+,OLL,cp solved,"AUF Trick: F R' F' R U2 F R' F' R U' R U' R'
+AUF Trick: r' U' R U M' U' R2 F R F' U R",TRUE,google.com
+,OLL,cp solved,AUF Trick: S r' F' r S' U r U' r' F,TRUE,google.com
+,OLL,cp solved,Anti-Diag: R U' R2' F2 U' R F R' U F2 R2 U R',TRUE,google.com
+,OLL,cp solved,"AUF Trick: F' U' L' U L F
+AUF Trick: f' L' U' L U f",TRUE,google.com
+,OLL,cp solved,"AUF Trick: R U B U' B' R'
+AUF Trick: f R U R' U' f'",TRUE,google.com
+,OLL,cp solved,"AUF Trick: S' r' F' r U r U' r' f
+AUF Trick: S R U R' U' f' U' F",TRUE,google.com
+,OLL,cp solved,"AUF Trick: L U F' U' L' U L F L'
+AUF Trick: S' L' U' L U f U F'",TRUE,google.com
+,OLL,cp solved,Anti-Diag: F R U' R' U R U R' F',TRUE,google.com
+,OLL,cp solved,AUF Trick: f U R U' R' f',TRUE,google.com
+,OLL,cp solved,"Anti-Diag: F' r' F' r U r' F' r U F
+Anti-Diag: f' U' r' F r U' r' F r f
+Anti-Diag: F U R U' R' F' R U R' U R U2' R'",FALSE,google.com
+,OLL,cp solved,AUF Trick: F R U R' U' R U R' U' F',TRUE,google.com
+,OLL,cp solved,AUF Trick: r U' r2 U r2 U r2 U' r,TRUE,google.com
+,OLL,cp solved,AUF Trick: r' U r2 U' r2 U' r2 U r',TRUE,google.com
+,OLL,cp solved,"AUF Trick: r' U2 R U R' U' R U R' U r
+AUF Trick: r' U' R U' R' U R U' R' U2 r",FALSE,google.com
+,OLL,cp solved,AUF Trick: r U2 R' U' R U R' U' R U' r',TRUE,google.com
+,OLL,cp solved,Anti-Diag: r U' r' U' r B U B' r',TRUE,google.com
+,OLL,cp solved,"Anti-Diag: R' F R U R' U' F' U R
+AUF Trick: F' U f U R U' R' S'",TRUE,google.com
+,OLL,cp solved,,FALSE,google.com
+,OLL,cp solved,,FALSE,google.com
+,OLL,cp solved,AUF Trick: R' F2 r U r' F R,TRUE,google.com
+,OLL,cp solved,,FALSE,google.com
+,OLL,cp solved,,TRUE,google.com
+,OLL,cp solved,,TRUE,google.com
+,OLL,cp solved,AUF Trick: S' U2 R U R' U R U2' R' S,TRUE,google.com
+,OLL,cp solved,"AUF Trick: S U2' r' F' r U' r' F2 r S'
+S' 'U L' U' L U' L' U2 L S",TRUE,google.com
+,OLL,cp solved,AUF Trick: L' U2 L2 F' L' F L' U2 L,TRUE,google.com
+,OLL,cp solved,Anti-Diag: F' r U r' U' r' F r,TRUE,google.com
+,OLL,cp solved,Anti-Diag: R U R' U' R' F R2 U R' U' F',TRUE,google.com
+,OLL,cp solved,"Anti-Diag: R U R' U R' F R F' R U2 R'
+Anti-Diag: R' U2' R U S' R' U R S",FALSE,google.com
+,OLL,cp solved,"Anti-Diag: F U R U2 R' U' R U R' F'
+AUF Trick: R B' R' U' R B R' f' L f",FALSE,google.com
+,OLL,cp solved,AUF Trick: r' U r U r' U' r f R' f',TRUE,google.com
+,OLL,cp solved,AUF Trick: r' U' r R' U' R U r' U r,TRUE,google.com
+,OLL,cp solved,"Anti-Diag: R' F R U R' U' F' R U' R' U2 R
+AUF Trick: R f R' F' R U R U' R' S' R'",FALSE,google.com
+,OLL,cp solved,"Anti-Diag: R U2 R' U2 R' F R2 U R' U' F'
+Anti-Diag: R' U' R' F R F' R U' R' U2 R
+AUF Trick: f R U R' U' R U R' U' f'",TRUE,google.com
+,OLL,cp solved,AUF Trick: R U R' U R U' B U' B' R',TRUE,google.com
+,OLL,cp solved,"Anti-Diag: R' F U R U' R2 F' R2 U R' U' R
+Anti-Diag: F U' R2 D R' U2 R D' R2 U F'
+Anti-Diag: R' F R U R U' R2 F' R2 U' R' U R U R'",TRUE,google.com
+,OLL,cp solved,,FALSE,google.com
+,OLL,cp solved,,FALSE,google.com
+,OLL,cp solved,Anti-Diag: F R U' R' S U' R U R' f',TRUE,google.com
+,OLL,cp solved,Anti-Diag: r2 D' r U r' D r2 U' r' U' r,TRUE,google.com
+,OLL,cp solved,"Anti-diag: F R' F R2 U' R' U' R U R' F2
+Anti-diag: S' R' U' R f R' U R U' F'
+Anti-diag: F U R U2 R' U' R U2 R' U' F'",TRUE,google.com
+,OLL,cp solved,Anti-diag: F U R2 D R' U' R D' R2' F',FALSE,google.com
+,OLL,cp solved,Anti-diag: R' F R F' R' F R F' R U R' U' R U R',FALSE,google.com
+,PLL,Aa,x R' U R' D2 R U' R' D2 R2 x',TRUE,google.com
+,PLL,Ab,x R2' D2 R U R' D2 R U' R x',TRUE,google.com
+,PLL,E,x' R U' R' D R U R' D' R U R' D R U' R' D' x,TRUE,google.com
+,PLL,F,R' F R f' R' F R2 U R' U' R' F' R2 U R' S,TRUE,google.com
+,PLL,Ga,R2 U R' U R' U' R U' R2 D U' R' U R D',TRUE,google.com
+,PLL,Gb,R' U' R U D' R2 U R' U R U' R U' R2 D,TRUE,google.com
+,PLL,Gc,R2 u' R U' R U R' u R2 f R' f',TRUE,google.com
+,PLL,Gd,R U R' U' D R2 U' R U' R' U R' U R2 D',TRUE,google.com
+,PLL,H,M2' U' M2' U2' M2' U' M2',TRUE,google.com
+,PLL,Ja,x R2' F R F' R U2' r' U r U2' x',TRUE,google.com
+,PLL,Jb,R U R' F' R U R' U' R' F R2 U' R',TRUE,google.com
+,PLL,Na,R F U' R' U R U F' R2' F' R U R U' R' F,TRUE,google.com
+,PLL,Nb,r' D' F r U' r' F' D r2 U r' U' r' F r F',TRUE,google.com
+,PLL,Ra,R U' R' U' R U R D R' U' R D' R' U2 R',TRUE,google.com
+,PLL,Rb,R2' F R U R U' R' F' R U2' R' U2 R,TRUE,google.com
+,PLL,T,R U R' U' R' F R2 U' R' U' R U R' F',TRUE,google.com
+,PLL,Ua,R2 U' S' U2 S U' R2,TRUE,google.com
+,PLL,Ub,R2 U' S R2 S' R2 U R2,TRUE,google.com
+,PLL,V,R' U R' d' R' F' R2 U' R' U R' F R F,TRUE,google.com
+,PLL,Y,F R' F R2 U' R' U' R U R' F' R U R' U' F',TRUE,google.com
+,PLL,Z,M2' U' M2' U' M U2' M2' U2' M,TRUE,google.com
+,PLL,Aa,"x' R2 D2 R' U' R D2 R' U R' x
+l' U R' D2 R U' R' D2 R2",TRUE,google.com
+,PLL,Ab,"x' R U' R D2 R' U R D2 R2'
+R' D' R U R' D R U R' D' R U2 R' D R",TRUE,google.com
+,PLL,,,,google.com
+,PLL,F,R' U R U' R2' F' U' F U R F R' F' R2,TRUE,google.com
+,PLL,,,,google.com
+,PLL,Gb,R' d' F R2 u R' U R U' R u' R2',TRUE,google.com
+,PLL,Gc,L2' U' L U' L U L2' U D' L U' L' D',TRUE,google.com
+,PLL,Gd,,TRUE,google.com
+,PLL,H,"M2 U2 M2 U M2 U2 M2
+M2 U2 M2 U' M2 U2 M2",TRUE,google.com
+,PLL,Ja,"L' U' L F L' U' L U L F' L2 U L
+L' U' L2 F L' U' L' U L F' L' U L
+R' F r' F2 R F' R' F2 R r",TRUE,google.com
+,PLL,Jb,R U R2 F' R U R U' R' F R U' R',TRUE,google.com
+,,,,,google.com
+,,,,,google.com
+,,,,,google.com
+,PLL,Rb,R' U2 R' D' R U' R' D R U R U' R' U' R,TRUE,google.com
+,PLL,T,"R U R' U' R' F R2 U' R' U F' L' U L
+L' U' L U L F' L2 U L U L' U' L F",TRUE,google.com
+,PLL,Ua,"M2' U M' U2' M U M2'
+M2' U M U2' M' U M2'",TRUE,google.com
+,PLL,Ub,"M2' U' M' U2' M U' M2'
+R' U R' U' R' U' R' U R U R2",TRUE,google.com
+,PLL,V,R' U' F' S U F2 U' B' R2 U' R' D R' U z,TRUE,google.com
+,,,,,google.com
+,PLL,Z,"M2' U2' M U' M2' U' M2' U' M
+M2 u M2 u’ S M2 S’",TRUE,google.com
+,OLLCP,Dot EO,"S' R U R' S U' M' U R U' r' 
+S R' U' R U R U R U' R' S'",,google.com
+,OLLCP,Dot EO,R U R' U' R' F R F' R U2 R2' F R F' R U2 R',TRUE,google.com
+,OLLCP,Dot EO,F R' F' R U R U' R' f R f' U' r' U' R U M',TRUE,google.com
+,OLLCP,L EO,"S' R U R' S R U' R'
+(U') r' U' R U M' U' R' U R",TRUE,google.com
+,OLLCP,Line,"R U R' U' M' U R U' r'
+(U) S R' F R S' R' F' R ",TRUE,google.com
+,OLLCP,EO Solved,"R U2 R2 U' R2 U' R2 U2 R
+R' U2 R2 U R2 U R2 U2 R'",,google.com
+,OLLCP,EO Solved,r U' r' U' r U r' F R' F' R2 U' R',,google.com
+,OLLCP,Dot EO,(U') R U' R2 D' r U r' D R2 U R',,google.com
+,OLLCP,Dot EO,(U2) f U R U' R' S' U R U' R' F',,google.com
+,OLLCP,Dot EO,(U2) F R' F' R U2 F R' F' R2 U2 R',,google.com
+,OLLCP,UD Line EO,(U2) R U R' U R U' B U' B' R',,google.com
+,OLLCP,UD Line EO,(U) F U R U' R2' F' R U2 R U2 R',FALSE,google.com
+,OLLCP,UD Line EO,(U) F' U' L' U L2 F L' U2 L' U2 L,FALSE,google.com
+,OLLCP,LR Line EO,(U2) F U R U' R' U R U' R' F' ,,google.com
+,OLLCP,LR Line EO,(U') R' U' R' F R F' R U' R' U2 R ,TRUE,google.com
+,OLLCP,LR Line EO,(U2) L' U2 L U2 L F' L2 U' L U F,TRUE,google.com
+,OLLCP,LR Line EO,R U2 R' U2 R' F R2 U R' U' F',TRUE,google.com
+,OLLCP,UL L EO,F R U R' U' R U R' U' F',,google.com
+,OLLCP,UL L EO,R U2 R' U' R U R' U2 R' F R F',FALSE,google.com
+,OLLCP,UL L EO,F R' F' U2 R U R' U R2 U2 R',FALSE,google.com
+,OLLCP,UL L EO,F' r' F r F R U R' U' R U' R',FALSE,google.com
+,OLLCP,UL L EO,(U) F R' F' r U2 R U' R' U R U2 r',FALSE,google.com
+,OLLCP,DL L EO,(U2) F R U' R' F' L' U' L U L' U L,FALSE,google.com
+,OLLCP,DL L EO,(U) F R' F' R U2 R U' R' U R U2 R',FALSE,google.com
+,OLLCP,DL L EO,"(U2) F' L' U' L U L' U' L U F
+f U R U' R' U R U' R' f'
+B' R' U' R U R' U' R U B",FALSE,google.com
+,OLLCP,DL L EO,(U) F' L F l' U2 L' U L U' L' U2 l,,google.com
+,OLLCP,DL L EO,(U) F R' F' R U2 R U r' F R' F' r,FALSE,google.com
+,OLLCP,UR L EO,r U' r2 U r2 U r2 U' r,TRUE,google.com
+,OLLCP,DR L EO,r' U r2 U' r2 U' r2 U r',TRUE,google.com
+,OLLCP,DR L EO,R U R2' F R F' U F R' F' R,FALSE,google.com
+,OLLCP,DR L EO,(U') F R U' R' U' R U R' U R U' R' F',FALSE,google.com
+,OLLCP,EO Solved,R U R' U R U2 R',FALSE,google.com
+,OLLCP,EO Solved,R U' L' U R' U' L,FALSE,google.com
+,OLLCP,EO Solved,L' U' L U' L' U2 L,FALSE,google.com
+,OLLCP,EO Solved,L' U R U' L U R',FALSE,google.com
+,OLLCP,Dot EO,(U) R' F2 R2 U2 R' F R U2 R2 F2 R,TRUE,google.com
+,OLLCP,Dot EO,M R U R' U r U2 r' U M',FALSE,google.com
+,OLLCP,Dot EO,(U') R' F2 R2 U2 R' F' R U2 R2 F2 R,FALSE,google.com
+,OLLCP,Dot EO,M U' r U2 r' U' R U' R' M',FALSE,google.com
+,OLLCP,LR Line EO,F U R U' R2 F' R U R U' R',TRUE,google.com
+,OLLCP,LR Line EO,r U' r' U' r U r' F' U F,FALSE,google.com
+,OLLCP,LR Line EO,(U) R B R' U2 R U R' U R U2 B' R',FALSE,google.com
+,OLLCP,LR Line EO,F L' U2 L U2 L F2 L2 U' L U F,FALSE,google.com
+,OLLCP,LR Line EO,F U R U2 R' U' R U R' F',FALSE,google.com
+,OLLCP,LR Line EO,R U R' U' R' F R F' R U R' U R U2 R',TRUE,google.com
+,OLLCP,LR Line EO,F' U' r' F r2 U r' U' r' F r ,FALSE,google.com
+,OLLCP,LR Line EO,R' F R U R' F' R F U' F',FALSE,google.com
+,OLLCP,LR Line EO,(U) R' F' R U2 R' U' R U' R' U2 F R,FALSE,google.com
+,OLLCP,LR Line EO,F' R U2 R' U2 R' F2 R2 U R' U' F',FALSE,google.com
+,OLLCP,LR Line EO,F' U' r' F2 r U r' F' r F,FALSE,google.com
+,OLLCP,LR Line EO,R U R' U' R' F R F' R U R' U R U2 R',FALSE,google.com
+,OLLCP,UD Line EO,(U) R' F' R r' F' r U R' F R,TRUE,google.com
+,OLLCP,UD Line EO,(U2) R' U2 R U R' F U R U' R' F' R,FALSE,google.com
+,OLLCP,UD Line EO,S' L F' L' f l' U' L U M,FALSE,google.com
+,OLLCP,UD Line EO,(U') r U M U R' U' r U' r',FALSE,google.com
+,OLLCP,UD Line EO,(U) R' F R U R' U' F' R U' R' U2 R,FALSE,google.com
+,OLLCP,UD Line EO,S R' F R f' r U R' U' M,FALSE,google.com
+,OLLCP,DL Sune DR Antisune,(U') r' U2 R U R' U r,,google.com
+,OLLCP,DL Sune DR Antisune,(U) F' L' U L U' L' U2 L U F,FALSE,google.com
+,OLLCP,DL Sune DR Antisune,(U') r U2 R' U' R U' r',FALSE,google.com
+,OLLCP,DL Sune DR Antisune,(U') F R U' R' U R U2 R' U' F',FALSE,google.com
+,OLLCP,UL Sune UR Antisune,r U R' U R U2 r' ,,google.com
+,OLLCP,UL Sune UR Antisune,(U2) L' U2 L F' L F L' U L' U L,FALSE,google.com
+,OLLCP,UL Sune UR Antisune,F R' F' R U2 R U2 R',FALSE,google.com
+,OLLCP,UL Sune UR Antisune,L' U2 L U2 L F' L' F,FALSE,google.com
+,OLLCP,UL Sune UR Antisune,R' F' r U' r' F2 R,,google.com
+,OLLCP,UL Sune UR Antisune,(U2) R U2 R' F R' F' R U' R U' R',FALSE,google.com
+,OLLCP,UL Sune UR Antisune,F' L F L' U2 L' U2 L,FALSE,google.com
+,OLLCP,UL Sune UR Antisune,R U2 R' U2 R' F R F',FALSE,google.com
+,OLLCP,UR Sune UL Antisune,(U2) R U R' U R' F R F' R U2 R',,google.com
+,OLLCP,UR Sune UL Antisune,(U') R' U2' R U S' R' U R S,FALSE,google.com
+,OLLCP,UR Sune UL Antisune,L' U' L U L F' L2 U' L U F,FALSE,google.com
+,OLLCP,UR Sune UL Antisune,(U) F' U' F r U' r' U r U r',FALSE,google.com
+,OLLCP,UR Sune UL Antisune,(U) R' U' R U' R' U R' F R F' U R,FALSE,google.com
+,OLLCP,UR Sune UL Antisune,(U') R U2 R' U' S' R U' R' S ,FALSE,google.com
+,OLLCP,UR Sune UL Antisune,R U R' U' R' F R2 U R' U' F',FALSE,google.com
+,OLLCP,UR Sune UL Antisune,(U') F U F' R' F R U' R' F' R,FALSE,google.com
+,OLLCP,DR Sune DL Antisune,S R U R' U R U2 R' U2 S',,google.com
+,OLLCP,DR Sune DL Antisune,(U2) r U R' U R' F R F' R U2 r',FALSE,google.com
+,OLLCP,DR Sune DL Antisune,S' L' U' L U' L' U2 L U2 S,TRUE,google.com
+,OLLCP,DR Sune DL Antisune,(U2) l' U' L U' L F' L' F L' U2 l,FALSE,google.com
+,OLLCP,EO Solved,(U) F' r U R' U' r' F R ,,google.com
+,OLLCP,EO Solved,(U') R' U2 R' D' R U2 R' D R2,,google.com
+,OLLCP,EO Solved,r U2 R2' F R F' R U2 r',,google.com
+,OLLCP,EO Solved,F R' F' r U R U' r',,google.com
+,OLLCP,EO Solved,R U2 R D R' U2 R D' R2,,google.com
+,OLLCP,EO Solved,(U2) R U R' U R U' R' U R U' R' U R U2 R',,google.com
+,OLLCP,Dot EO,(U) F' r U r' U' S r' F r S',FALSE,google.com
+,OLLCP,Dot EO,"(U') L' U' L U' L F' L' F U2 L F' L' F
+(U) R' F R F' U2 F' U r' F r F",FALSE,google.com
+,OLLCP,Dot EO,F R' F' R U S' R U' R' S,,google.com
+,OLLCP,Dot EO,(U2) R U R' U R' F R F' U2 R' F R F',FALSE,google.com
+,OLLCP,LR Line EO,f R' F' R U R U' R' S',,google.com
+,OLLCP,LR Line EO,(U2) R' F R U R' U' F' U R,,google.com
+,OLLCP,UD Line EO,(U') f' r U r' U' r' F r S,,google.com
+,OLLCP,UD Line EO,y r U2 R2 D' R U' R' D R2 U' r',TRUE,google.com
+,OLLCP,UL L EO,F R' F' R U R U' R',TRUE,google.com
+,OLLCP,UL L EO,(U') R U2 R' F R' F' R2 U2 R',TRUE,google.com
+,OLLCP,UL L EO,F R U' R' U' R U R' F',TRUE,google.com
+,OLLCP,DR L EO,R U2 R2 F R F' R U2 R',TRUE,google.com
+,OLLCP,UR L EO,(U') R U R' U R U' R' U' R' F R F',,google.com
+,OLLCP,UR L EO,(U) R U R' U F' U F U2 R U' R',TRUE,google.com
+,OLLCP,UR L EO,F R U' R' S U' R U R' f',TRUE,google.com
+,OLLCP,DL L EO,(U2) L' U' L U' L' U L U L F' L' F,,google.com
+,OLLCP,DL L EO,R U R' U2 F' U' F U' R U' R',TRUE,google.com
+,OLLCP,DL L EO,R U R' U' F' U2 F U R U R',FALSE,google.com
+,OLLCP,DL L EO,(U2) F' L' U L S' U L' U' L f,FALSE,google.com
+,OLLCP,EO Solved,(U2) R2 D R' U2 R D' R' U2 R',,google.com
+,OLLCP,EO Solved,F R U' R' U R U R' U R U' R' F',,google.com
+,OLLCP,EO Solved,R2 D' R U2 R' D R U2 R,,google.com
+,OLLCP,EO Solved,R' U' R U' R' U2 R2 U R' U R U2 R',,google.com
+,OLLCP,Dot EO,(U) r' U' R U M' U' R2' F R F' U R,TRUE,google.com
+,OLLCP,Dot EO,(U2) F R' F' R U2 F R' F' R U' R U' R',FALSE,google.com
+,OLLCP,Dot EO,R U2 R' F' U2 F R U' R2 F R F',FALSE,google.com
+,OLLCP,Dot EO,r' U' R U' R' U2 r2 U R' U R U2 r',FALSE,google.com
+,OLLCP,Dot EO,(U2) F' L F L' U2 F' L F L' U L' U L,FALSE,google.com
+,OLLCP,Dot EO,(U2) R' F2 r U r2 F2 r U' r' F2 r F R,FALSE,google.com
+,OLLCP,LR Line EO,(U) R' U' R' F R F' U R ,TRUE,google.com
+,OLLCP,LR Line EO,(U2) F R U R' U' R' U R U' F' U R' U' R,FALSE,google.com
+,OLLCP,UD Line EO,(U') F R U R' U' F' ,TRUE,google.com
+,OLLCP,UD Line EO,(U') F R2 D R' U R D' R2 U' F',FALSE,google.com
+,OLLCP,DL L EO,(U) F U R U' R' F' ,,google.com
+,OLLCP,DR L EO,(U') F' U' L' U L F,,google.com
+,OLLCP,UL L EO,M' R' F' U' F U R U' M,TRUE,google.com
+,OLLCP,UL L EO,F U R2 D R' U' R D' R2 F',FALSE,google.com
+,OLLCP,UL L EO,(U') R' F R F' R' F R F' R U R' U' R U R',FALSE,google.com
+,OLLCP,UR L EO,(U') S' F R U R' U' F' U S,TRUE,google.com
+,OLLCP,UR L EO,"(U') R' U' F2 u' R U R' D R2 B
+(U') R' U' F2 u' R U R' u F2 R",TRUE,google.com
+,OLLCP,EO Solved,"(U') R' U' F2 u' R U R' D R2 B
+(U') R' U' F2 u' R U R' u F2 R",TRUE,google.com
+,OLLCP,EO Solved,"(U') R' U' F2 u' R U R' D R2 B
+(U') R' U' F2 u' R U R' u F2 R",TRUE,google.com
+,OLLCP,EO Solved,"(U') R' U' F2 u' R U R' D R2 B
+(U') R' U' F2 u' R U R' u F2 R",TRUE,google.com
+,OLLCP,Dot EO,,,google.com
+,OLLCP,Dot EO,r U R' U' r' F R F',,google.com
+,OLLCP,LR Line EO,(U') R U' R' U2 L R U' R' U L',,google.com
+,OLLCP,LR Line EO,(U2) R' F' r U R U' r' F,,google.com
+,OLLCP,UD Line EO,S' R U R' S U' R' F R F',FALSE,google.com
+,OLLCP,UD Line EO,(U2) S r' F' r S' U r U' r' F,FALSE,google.com
+,OLLCP,UD Line EO,R U R' U' R' F R F',TRUE,google.com
+,OLLCP,DR L EO,(U2) L' U' L U L F' L' F,TRUE,google.com
+,OLLCP,DR L EO,f R f' U' r' U' R U M',,google.com
+,OLLCP,UR L EO,(U) R U R' S R' F R f' U R U R',FALSE,google.com
+,OLLCP,UR L EO,"F' U' F U r U R' U' M
+(U') R' U' R U F R f' U' S",FALSE,google.com
+,OLLCP,UL L EO,S R U R' U' R' F R f',TRUE,google.com
+,OLLCP,UL L EO,"f R U' R' U S' R U R' F'
+(U) R D r' U r D' R' f R' f'
+(U') F' L F L' U' L' U' L U L' U L
+(U) R U2 R' F' L' U L F R U2 R'",TRUE,google.com
+,OLLCP,UL L EO,"(U2) S' r' F' r U r U' r' f
+R' U' F U R U' R' F' R ",TRUE,google.com
+,OLLCP,UL L EO,(U') F R' F' R U R U R' U' R U' R',TRUE,google.com
+,OLLCP,UL L EO,"S' R U R' U' R' F R F' U S
+(U') M U R U R' U' R' F R F' M'
+r U R' U' M2' R' F R F' M'",TRUE,google.com
+,OLLCP,DL L EO,"(U2) r D r' U r D' r2 U r U' r' U' r
+R F R' U R F' R2' F R U' R' F' R",TRUE,google.com
+,OLLCP,DL L EO,R U R' U' R U' R' F' U' F R U R',FALSE,google.com
+,OLLCP,DL L EO,,FALSE,google.com
+,OLLCP,DL L EO,(U) F' L F' L2 U L U L' U' L F2,FALSE,google.com
+,OLLCP,DL L EO,(U) r' D' r U' r' D r2 U' r' U r U r',TRUE,google.com
+,OLLCP,EO Solved,(U) l' U' L U M2 L F' L' F M',TRUE,google.com
+,OLLCP,EO Solved,F R' F R2 U' R' U' R U R' F2,TRUE,google.com
+,OLLCP,EO Solved,(U') S' R' U' R f R' U R U' F',TRUE,google.com
+,OLLCP,Dot EO,F U R U2' R' U' R U2' R' U' F',TRUE,google.com
+,OLLCP,Dot EO,"(U) R U R' U R U' R' U R U2 R' 
+R' U2' R U R' U' R U R' U R",,google.com
+,OLLCP,LR Line EO,F U R U' R' U R U' R' U R U' R' F',,google.com
+,OLLCP,LR Line EO,(U) R U R' U R U L' U R' U' L,,google.com
+,OLLCP,LR Line EO,"(U') R U2 R2 F R F' U2 R' F R F'
+(U') R U B' R B R2 U' R' F R F'",TRUE,google.com
+,OLLCP,LR Line EO,R U' R2 D' r U' r' D R2 U R',TRUE,google.com
+,OLLCP,UD Line EO,R' F U R U' R2' F' R2 U R' U' R,,google.com
+,OLLCP,UD Line EO,(U) R U2 R2 U' R U' R' U2 F R F',TRUE,google.com
+,OLLCP,DL L EO,R' F R U R U' R2 F' R2 U' R' U R U R',TRUE,google.com
+,OLLCP,DL L EO,F U' R2 D R' U2 R D' R2 U F',TRUE,google.com
+,OLLCP,DL L EO,(U) r U r' U R U' R' M' U R U2 r',TRUE,google.com
+,OLLCP,DR L EO,R' F R F' U' F R' F' R S' R U' R' S,FALSE,google.com
+,OLLCP,DR L EO,r' U2 R U R' U' R U R' U r,FALSE,google.com
+LS,BLE,H,(U) F R U R' U' R U' R' U R U R' F',TRUE,google.com
+LS,BLE,,(U2) R' F R F' U' F R' F' R2 U' R',TRUE,google.com
+LS,BLE,H,(U') r U R' U R U' R' U R U2 r',TRUE,google.com
+LS,BLE,H,(U2) r U' r' F U2' r2' F r U' r,FALSE,google.com
+LS,BLE,L,U (R U' R' U) y' (R' U R U R' U2' R),TRUE,google.com
+LS,BLE,L,(R' F' R U) (R U' R' F) -> OLL,FALSE,google.com
+LS,BLE,L,U2 (R U2' R' U') y' (R' U2 R U' R' U' R),TRUE,google.com
+LS,BLE,L,U' (F' R U R') (U' R' F R),TRUE,google.com
+LS,BLE,T,(R' F' R U) (R U' R' F),TRUE,google.com
+LS,BLE,T,U' (F' R U R' U' R' F R) F' r U R' U' r' F R,FALSE,google.com
+LS,BLE,T,U' (F' R U R') (U' R' F R) -> OLL,FALSE,google.com
+LS,BLE,T,U' (F' R U R') (U' R' F R) -> OLL,FALSE,google.com
+LS,BLE,U,U' (F' R U R') (U' R' F R) -> OLL,FALSE,google.com
+LS,BLE,U,U' (F' R U R') (U' R' F R) -> OLL,FALSE,google.com
+LS,BLE,U,U' (R' D' R U') (R' D R U) (R U R'),TRUE,google.com
+LS,BLE,U,U (R U' R') (U' R' D' R) (U R' D R),TRUE,google.com
+LS,BLE,,,,google.com
+LS,BLE,S,(R U R' U2') (R U R' U2' R U' R'),TRUE,google.com
+LS,BLE,S,U' (R U' R' U R U R') U (R U2' R' U R U R'),TRUE,google.com
+LS,BLE,S,-,FALSE,google.com
+LS,BLE,S,U (R U' R' U) (R U R' U2' R U R'),TRUE,google.com
+LS,BLE,A/S,U' (F' R U R2') U' R' F R U R,TRUE,google.com
+LS,BLE,A/S,U' (F' R U R') (U' R' F R) -> OLL,FALSE,google.com
+LS,BLE,A/S,U' (R U' R' U2) (R U' R' U' R U R'),TRUE,google.com
+LS,BLE,A/S,U' (R U R' U2') (R U' R' U2 R U' R'),TRUE,google.com
+LS,BLE,,,,google.com
+LS,BLE,Pi,(R U R' U2') (R U R' U') (R U2 R'),TRUE,google.com
+LS,BLE,Pi,U2 (R U2' R' U) (R U' R' U2 R U' R',TRUE,google.com
+LS,BLE,Pi,U2' (R U R' U2') (R U2' R' U2 R U' R'),TRUE,google.com
+LS,BLE,Pi,(R U2' R' U) (R U2 R' U') (R U2 R'),TRUE,google.com
+LS,WV,L,U L' U2 R U R' U2 L,TRUE,google.com
+,,,,,google.com
+LS,WV,Skip,U R U' R',TRUE,google.com
+LS,WV,L,R' F R U R U' R' F',TRUE,google.com
+LS,WV,T,U R2 D R' U' R D' R2,TRUE,google.com
+LS,WV,Sune,U R U' R' U R' U' R U' R' U2 R,TRUE,google.com
+LS,WV,U,R U' R' U2 R U' R' U2 R U R',FALSE,google.com
+LS,WV,Antisune,U R U R' U' R U' R',TRUE,google.com
+LS,WV,,,,google.com
+LS,WV,H,U2 R U' R' U R U2 R',TRUE,google.com
+LS,WV,T,U2 F' R U2 R' U2 R' F R,FALSE,google.com
+LS,WV,Pi,R' F R2 U R' U' R U R' U' F',TRUE,google.com
+LS,WV,Antisune,U2 R' U' R2 U' R2 U2 R,TRUE,google.com
+LS,WV,T,U R U2 L U L' R' U2 L U L',FALSE,google.com
+LS,WV,U,U2 R U2 R2 U' R U' R' U2 R,FALSE,google.com
+LS,WV,Sune,U2 R2 D R' U2 R D' R2,FALSE,google.com
+LS,WV,T,L' U R U' R' L,FALSE,google.com
+LS,WV,U,U2 L' R U R' U' L R U2 R',FALSE,google.com
+LS,WV,Sune,U2 R U2 R',TRUE,google.com
+LS,WV,T,R' F' R U2 R U2 R' F,FALSE,google.com
+LS,WV,U,R' F2 R2 U' R' U' R U R' F2,FALSE,google.com
+,,,,,google.com
+LS,WV,U,U R U' R' U' R U R' U R U2 R',FALSE,google.com
+LS,WV,T,U2 R U' R D R' U' R D' R2,FALSE,google.com
+LS,WV,L,U R U R D R' U2 R D' R2,FALSE,google.com
+LS,WV,U,R2 U R' U R' U' R U R U2 R2,FALSE,google.com
+LS,WV,L,U2 R U' R' U R U' R' U R U2 R',FALSE,google.com
+LS,WV,Pi,U2 R U2 R2 U2 R U R' U R,FALSE,google.com
+LS,WV,L,U R U' R2 U' R U' R' U2 R,FALSE,google.com
+LS,WV,L,U R U R' U' R U R' U' R U' R',FALSE,google.com
+,,,,,google.com
+LS,WVCP,L,R U' R' U2 F' R F R2 D' R U2 R' D R2 F' R' F,TRUE,google.com
+LS,WVCP,Skip,U' L' U2 R U2 R' U2 L,TRUE,google.com
+LS,WVCP,L,L' U2 R U R' U2 L,TRUE,google.com
+LS,WVCP,T,U' R' U D R2 D' R' D R2 U' R D',TRUE,google.com
+LS,WVCP,Sune,U2 L' U2 R U' R' U2 L,TRUE,google.com
+LS,WVCP,U,R U R' U' R2 D R' U' R D' R2,TRUE,google.com
+LS,MW,S,"(U) F' U' F U R U2 R'
+R' F R d R' U R U2' R'",TRUE,google.com
+LS,MW,L,(U) R U' R' F R U R' U' F',FALSE,google.com
+LS,MW,U,(U) R U' R' U' R' U' R' F R F' U R,FALSE,google.com
+LS,MW,U,F2 L F L' F U' R U R',TRUE,google.com
+LS,MW,T,"x' R' D R2 U' R' D' R U R' x
+R' F R2 U R' U' R' F' R U R U' R'",FALSE,google.com
+LS,MW,T,"L R' F R F' U L' U L U2 L'
+y' U R' U2 R r' U r U' r' U' r",FALSE,google.com
+LS,MW,L,M' U R U' r',TRUE,google.com
+LS,MW,A/S,R' F R F' R' U' R U' R' U2 R,FALSE,google.com
+LS,MW,Solved,R' F R F',TRUE,google.com
+,,,,,google.com
+LS,MW,U,"(U) y' R' F' L' U' L F R
+R' U2 r U R U' r' R' U2 R",FALSE,google.com
+LS,MW,U,R' U2 r U R U' r' R' U2 R,FALSE,google.com
+LS,MW,T,"y U M U' R' F' R U M'
+(U2) R' F2 L F L' F2 R F'",TRUE,google.com
+LS,MW,U,(y' U) R' F' U2 F U R,TRUE,google.com
+LS,MW,S,(U2) L R' F' L' F2 R F R' F2 R,FALSE,google.com
+LS,MW,L,"(U2) y' R2 F R F' R
+U2 F2 r U r' F",TRUE,google.com
+LS,MW,S/A,(U) R U' R' U R' U' F' U F R,FALSE,google.com
+LS,MW,T,(U) F' U F R U' R',TRUE,google.com
+LS,MW,Solved,"U R B U' B' R'
+(y U) F R U' R' F'",TRUE,google.com
+LS,MW,,,,google.com
+LS,MW,S,B' R' F R F' B,TRUE,google.com

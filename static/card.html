@@ -1,0 +1,39 @@
+Session ID: {{ session_id }}
+<form method="post">
+    <input type="hidden" name="card_id" value="text1">
+    Text: <input type="text" name="text">
+    <input type="submit" value="Submit">
+</form>
+<table>
+    {% for text in data.get('text1', []) %}
+    <tr>
+        <td>{{ text }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<form method="post">
+    <input type="hidden" name="card_id" value="text2">
+    Text: <input type="text" name="text">
+    <input type="submit" value="Submit">
+</form>
+<table>
+    {% for text in data.get('text2', []) %}
+    <tr>
+        <td>{{ text }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<form method="post">
+    <input type="hidden" name="card_id" value="text3">
+    Text: <input type="text" name="text">
+    <input type="submit" value="Submit">
+</form>
+<table>
+    {% for text in data.get('text3', []) %}
+    <tr>
+        <td>{{ text }}</td>
+    </tr>
+    {% endfor %}
+</table>

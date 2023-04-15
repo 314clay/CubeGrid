@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wordle Solver</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-200">
+<div class="container mx-auto mt-8">
+    <h1 class="text-3xl font-bold mb-4">Wordle Solver</h1>
+    <form action="{{ url_for('solve') }}" method="post" class="bg-white rounded-lg shadow-md p-8">
+        <div class="flex flex-wrap -mx-2">
+            <div class="w-full md:w-1/2 px-2 mb-4">
+                <label for="guesses" class="block text-gray-700 font-bold mb-2">Guesses:</label>
+                <input type="text" name="guesses" id="guesses" class="form-input w-full rounded-lg border-gray-400 focus:border-blue-500 focus:shadow-outline-blue" placeholder="Enter your guesses separated by spaces">
+            </div>
+            <div class="w-full md:w-1/2 px-2 mb-4">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline-blue">Solve</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

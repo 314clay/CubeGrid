@@ -1,0 +1,44 @@
+<h2 id="timer">0.00</h2>
+<script>
+    let timerStarted = false;
+    let startTime;
+    let elapsedTime = 0;
+    let timerInterval;
+    let timerElement = document.getElementById('timer');
+
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') {
+            event.preventDefault();
+            if (!timerStarted) {
+                timerStarted = true;
+                timerElement.style.color = 'green';
+            }
+        }
+    });
+
+    document.addEventListener('keyup', function(event) {
+        if (event.code === 'Space') {
+            event.preventDefault();
+            if (timerStarted) {
+                if (!startTime) {
+                    startTime = Date.now();
+                    timerInterval = setInterval(updateTimer, 10);
+                    timerElement.style.color = 'black';
+                } else {
+                    clearInterval(timerInterval);
+                    timerElement.style.color = 'black';
+                    startTime = null;
+                }
+            }
+            timerStarted = false;
+        }
+    });
+
+    function updateTimer() {
+        let now = Date.now();
+        elapsedTime = now - startTime;
+        let seconds = elapsedTime / 1000;
+        timerElement.textContent = seconds.toFixed(2);
+    }
+
+</script>

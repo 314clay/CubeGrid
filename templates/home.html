@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flask Data Entry</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+            rel="stylesheet"
+    />
+    <style>
+        .text-blue-500 {
+          color: #006699;
+        }
+
+      .backdrop {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(5px);
+        z-index: 10;
+      }
+
+      .large-card {
+        opacity: 0.8;
+        z-index: 20;
+      }
+
+      .table-container {
+        max-height: 300px;
+      }
+
+      /* Added CSS for dropdown */
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        z-index: 999;
+        background-color: #f9fafb;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        min-width: 160px;
+        padding: 12px 16px;
+      }
+
+      .dropdown-menu input[type="text"] {
+        margin-bottom: 8px;
+      }
+
+      /* Added CSS for navbar */
+      .navbar {
+        position: relative;
+      }
+
+      .navbar button {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .navbar:hover button {
+        transform: scale(1.05);
+      }
+
+      .navbar:hover .dropdown-menu {
+        display: block;
+        animation: fade-in 0.3s ease-in-out;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto p-8">
+
+<div class="navbar relative inline-block">
+    <button
+            class="text-gray-500 font-semibold py-2 px-4 rounded inline-flex items-center transition-all"
+    >
+        <span class="mr-1">Menu</span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+            <form id="custom-url-form">
+                <label for="custom_url" class="block mb-2">Enter Custom URL:</label>
+                <input type="text" id="custom_url" name="custom_url" placeholder="Type here and press Enter" class="w-full border-2 border-gray-300 p-2 rounded" onkeydown="handleCustomURL(event)" value="{{ session_id }}">
+            </form>
+
+        </li>
+        <li>
+            <form method="POST">
+                <label for="subsession_ids" class="block mb-2"
+                >Subsession IDs:</label
+                >
+                <input
+                        type="text"
+                        id="subsession_ids"
+                        name="subsession_ids"
+                        value="{{ ','.join(subsession_ids) }}"
+                        class="w-full border-2 border-gray-300 p-2 rounded"
+                />
+                <input type="hidden" name="session_id" value="{{ session_id }}" />
+                <!--                    <button type="submit" class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</button>-->
+            </form>
+        </li>
+    </ul>
+</div>
+
+<h1 class="text-3xl mb-6">CubeGrid Project {% if session_id %}- {{ session_id }}{% endif %}</h1>
+
+<div class="w-full md:w-2/3 mx-auto flex justify-center items-center">
+    <form class="relative">
+        <input type="text" id="search" name="search" onkeyup="filterSubsessions()" placeholder="Search by subsession ID" class="border border-gray-300 bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none w-full">
+        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+            <svg class="text-gray-600 h-4 w-4 fill-current" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M11.707 10.293a1 1 0 01-1.414 1.414l-2-2a1 1 0 010-1.414l2-2a1 1 0 011.414 1.414L9.414 8l2.293 2.293z"></path><path fill-rule="evenodd" d="M7.5 14a6.5 6.5 0 100-13 6.5 6.5 0 000 13zM1 7.5a6.5 6.5 0 0110.488-5.243l4.327 4.327A6.473 6.473 0 0114 7.5a6.5 6.5 0 11-13 0z" clip-rule="evenodd"></path></svg>
+        </button>
+    </form>
+
+    <form method="POST" id="new_subsession_form" class="ml-2">
+        <div class="relative">
+            <img src="https://cdn-icons-png.flaticon.com/512/35/35570.png" alt="timer" onclick="createNewSubsessionID()" class="w-6 h-6 cursor-pointer" />
+        </div>
+        <input type="hidden" name="session_id" value="{{ session_id }}">
+        <input type="hidden" name="subsession_id" id="new_subsession_id">
+    </form>
+</div>
+
+<div id="subsession-count" class="text-gray-500 text-sm mt-2" style="text-align: center;"></div>
+
+<div id="new_subsession_card" class="bg-white shadow-md rounded p-6 mb-6" style="display: none;">
+    <h3 class="text-xl mb-4">New Subsession ID:</h3>
+    <div class="card" id="generated_subsession">
+        <div class="card-body">
+            <span id="generated_subsession_id"></span>
+        </div>
+    </div>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 p-6">
+    {% for subsession_id in subsession_ids %}
+    <div class="card {{ 'bg-yellow-200' if subsession_id == selected_subsession }} bg-white shadow-md rounded p-6 hover:bg-gray-200 transition duration-300" id="{{ subsession_id }}">
+        <div class="card-body flex flex-col items-center justify-center">
+            <div class="mt-4" style="position:relative;">
+                <img src="http://cube.rider.biz/visualcube.php?fmt=svg&bg=t&view=plan&stage=zbll&case={{ subsession_id.split(':')[1] }}&v={{ cache_version }}" alt="{{ subsession_id }} image" class="rounded-lg">
+                <form method="POST" class="special-checkbox" style="position:absolute;top:0;right:0;">
+                    <input type="hidden" name="session_id" value="{{ session_id }}">
+                    <input type="hidden" name="toggle_subsession_id" value="{{ subsession_id }}">
+                    <button type="submit" class="rounded-full w-5 h-5 bg-green-500 {{ 'opacity-100' if subsession_id in special_subsession_ids else 'opacity-25' }} absolute top-2 right-2" name="toggle_special" value="{{ subsession_id }}" style="outline:none;"></button>
+                </form>
+            </div>
+            <form method="POST">
+                <input type="hidden" name="session_id" value="{{ session_id }}">
+                <input type="hidden" name="subsession_id" value="{{ subsession_id }}">
+                <button type="submit" class="text-blue-500 hover:text-blue-700 font-bold text-lg">{{ subsession_id }}</button>
+            </form>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+    {% if selected_subsession %}
+    <div class="backdrop fixed inset-0"></div>
+    <div class="large-card fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 rounded-lg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: max-content;">
+        <div class="form-container p-4 space-y-2">
+            <form method="POST" id="data-entry-form">
+                <input type="text" id="inverse" name="inverse" readonly class="rounded w-full p-2 bg-white"><br>
+
+                <span id="title"><img src="{{randomSubsession}}" alt="cube image"></span>
+
+                <input type="hidden" id="session_id" name="session_id" value="{{ session_id }}" hidden>
+                <input type="hidden" id="subsession_id" name="subsession_id" value="{{ selected_subsession }}" hidden>
+                <input type="hidden" id="count" name="count" value="-" hidden>
+
+                <label for="random" class="block text-white">Case</label>
+                <div class="relative">
+                    <input type="text" id="random" name="subsession_id" readonly class="w-full border-20 border-gray-300 p-2 rounded cursor-pointer hover:text-gray-800">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-gray-200 transition-opacity duration-300">
+                        <p class="text-lg font-bold">Move cursor away to reveal</p>
+                    </div>
+                </div>
+
+                <h2 id="timer" class="text-4xl font-bold text-center mb-2">0.00</h2>
+                <input type="hidden" id="timer-data" name="data">
+                <script>
+                    var subsessions = "{{ selected_subsession }}".split(',');
+                    var randomSubsession = subsessions[Math.floor(Math.random() * subsessions.length)];
+                    var currCase = unescape(randomSubsession.replace(/&#(\d+);/g, function(match, dec) {
+                        return String.fromCharCode(dec);
+                    }));
+                    var imgURL = "http://cube.rider.biz/visualcube.php?fmt=svg&bg=t&view=plan&stage=zbll&case=" + currCase.split(":")[1] + "&v={{ cache_version }}";
+                    document.getElementById("random").value = currCase;
+                    document.getElementById("title").innerHTML = '<img src="' + imgURL + '" alt="cube image">';
+
+                    var inverseAlgorithm = '';
+                    var algorithm = currCase.split(":")[1].trim().split(" ");
+                    for (var i = algorithm.length - 1; i >= 0; i--) {
+                        if (algorithm[i].indexOf("'") > -1) {
+                            inverseAlgorithm += algorithm[i].replace("'", "") + " ";
+                        } else {
+                            inverseAlgorithm += algorithm[i] + "' ";
+                        }
+                    }
+                    inverseAlgorithm = inverseAlgorithm.trim();
+                    document.getElementById("inverse").value = inverseAlgorithm;
+                    document.getElementById("count").value = currCase;
+                </script>
+
+            </form>
+        </div>
+
+        {% if data_list %}
+        <div class="grid grid-cols-2">
+            <div class="table-container max-h-[calc(100%-3rem)] overflow-y-hidden px-4 text-white">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Solve</th>
+                        <th>Time</th>
+                        <th>Algorithm</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for datum in data_list %}
+                    <tr>
+                        <td>{{ datum[-3] }}</td>
+                        <td>{{ datum[-1] }}</td>
+                        <td>{{ datum[-2] }}</td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="chart-container max-h-[calc(100%-3rem)] overflow-y-hidden px-4 text-white">
+                <canvas id="scatter-plot" width="400" height="400"></canvas>
+            </div>
+        </div>
+        {% endif %}
+
+<!--        <button type="button" onclick="window.location.href='/'" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded absolute top-2 right-2">X</button>-->
+    </div>
+    {% endif %}
+
+
+<button class="fixed bottom-4 left-4 bg-gray-800 text-white p-3 rounded-full shadow-lg z-50" id="infoBtn">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v2m0 4h.01m0 4h-.01M12 22a10 10 0 110-20 10 10 0 010 20z"/>
+    </svg>
+</button>
+
+<div class="fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-40 hidden" id="readmeSection">
+    <div class="bg-white w-96 rounded-lg p-6">
+        <h2 class="text-lg font-bold mb-4">About this project</h2>
+        <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nisi at nibh tristique aliquam. Donec sed ligula urna. Sed in neque eu mauris eleifend viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed bibendum dui quis nibh vehicula, a interdum leo ultricies. Integer pharetra arcu sit amet nulla tempus ullamcorper. Duis ac tincidunt mi.</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    let timerStarted = false;
+    let startTime, timerInterval;
+    let elapsedTime = 0;
+    let timerElement = document.getElementById('timer');
+
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space' && !isInputFocused()) {
+            event.preventDefault();
+            if (!timerStarted) {
+                timerStarted = true;
+                timerElement.style.color = 'green';
+            }
+        }
+    });
+
+    const isInputFocused = () => (['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) ? true : false;
+
+
+    document.addEventListener('keyup', function(event) {
+        if (event.code === 'Space') {
+            event.preventDefault();
+            if (timerStarted) {
+                if (!startTime) {
+                    startTime = Date.now();
+                    timerInterval = setInterval(updateTimer, 10);
+                    timerElement.style.color = 'black';
+                } else {
+                    clearInterval(timerInterval);
+                    timerElement.style.color = 'black';
+                    startTime = null;
+                    document.getElementById('data-entry-form').submit();
+                }
+            }
+            timerStarted = false;
+        }
+    });
+
+    function updateTimer() {
+        let now = Date.now();
+        elapsedTime = now - startTime;
+        let seconds = elapsedTime / 1000;
+        timerElement.textContent = seconds.toFixed(2);
+        document.getElementById('timer-data').value = seconds.toFixed(2);
+    }
+
+
+    function createNewSubsessionID() {
+        var searchInput = document.getElementById("search").value;
+        var visibleSubsessions = Array.from(document.querySelectorAll('.card:not([style*="display: none"])')).map(card => card.id);
+        var newSubsessionID = searchInput + ";" + visibleSubsessions.join(',');
+
+        document.getElementById("generated_subsession_id").innerText = newSubsessionID;
+        document.getElementById("new_subsession_id").value = newSubsessionID;
+        document.getElementById("new_subsession_card").style.display = "block";
+        document.getElementById("new_subsession_form").submit();
+    }
+
+        window.onload = function() {
+            filterSubsessions();
+        };
+
+        function filterSubsessions() {
+            var input, filter, cards, i, txtValue, visibleCount, visibleSpecialCount;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            cards = document.querySelectorAll('.card');
+            visibleCount = 0;
+            visibleSpecialCount = 0;
+
+            for (i = 0; i < cards.length; i++) {
+                txtValue = cards[i].getAttribute('id');
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                    visibleCount += 1;
+                    if (cards[i].querySelector('.special-checkbox button').classList.contains('opacity-100')) {
+                        visibleSpecialCount += 1;
+                    }
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+
+            document.getElementById("subsession-count").textContent = visibleSpecialCount + " of " + visibleCount + " cases learned";
+        }
+
+
+
+    function handleClickOutsideLargeCard(event) {
+      const largeCardElement = document.querySelector('.large-card');
+      const isInsideLargeCard = largeCardElement.contains(event.target);
+
+      if (!isInsideLargeCard) {
+        window.location.href = '/';
+      }
+    }
+
+    document.addEventListener('click', handleClickOutsideLargeCard);
+    function handleCustomURL(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            const customURL = document.getElementById('custom_url').value;
+            window.location.href = '/' + customURL;
+        }
+    }
+
+    const infoBtn = document.getElementById('infoBtn');
+    const readmeSection = document.getElementById('readmeSection');
+
+    infoBtn.addEventListener('click', () => {
+      readmeSection.classList.remove('hidden');
+    });
+
+    readmeSection.addEventListener('click', (event) => {
+      if (event.target === readmeSection) {
+        readmeSection.classList.add('hidden');
+      }
+    });
+
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+        var xValues = [];
+        var yValues = [];
+        var labels = [];
+
+        {% for datum in data_list %}
+            xValues.push({{ data_list|length - loop.index }});
+            yValues.push({{  datum[2] }});
+            labels.push("{{ datum[3] }}");
+        {% endfor %}
+
+
+        var scatterPlot = new Chart(document.getElementById("scatter-plot"), {
+            type: 'scatter',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: yValues.map((y, i) => ({x: xValues[i], y: y})),
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 1,
+                    pointRadius: 5,
+                    pointBackgroundColor: 'rgba(255, 99, 132, 0.8)',
+                    pointBorderColor: 'rgba(255, 99, 132, 1)',
+                    pointHoverRadius: 8,
+                    pointHoverBackgroundColor: 'rgba(255, 99, 132, 1)',
+                    pointHoverBorderColor: 'rgba(255, 99, 132, 1)',
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Solve'
+                        }
+                    }],
+                    yAxes: [{
+                        scaleLabel: {
+                            display: true,
+                            labelString: 'Time'
+                        },
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                }
+            }
+        });
+    </script>
+</body>
+</html>

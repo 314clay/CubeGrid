@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Grid Layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+<form class="p-4 flex items-center">
+    <label for="search" class="mr-4 font-bold">Search:</label>
+    <input type="text" id="search" name="search" class="rounded-lg py-2 px-4 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+</form>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 p-6">
+    {% for element in elements %}
+    <div class="element {% if element.learned %}learned{% endif %}" data-link="{{ element.link }}">
+        <div class="image-container relative">
+            <img src="{{ element.image_url }}" alt="{{ element.title }}" class="rounded-lg w-full">
+            {% if element.learned %}
+            <div class="checkmark absolute top-2 right-2 w-4 h-4 bg-green-500 rounded-full"></div>
+            {% endif %}
+        </div>
+        <div class="title text-center font-bold text-lg mt-4">{{ element.title }}</div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 hidden" id="popup-container">
+    <div class="bg-white mx-auto rounded-lg max-w-lg overflow-hidden mt-32 p-4" id="popup">
+        <div class="text-2xl font-bold mb-4" id="popup-title"></div>
+        <a href="#" id="popup-link">
+            <img src="" alt="" id="popup-image" class="w-full">
+        </a>
+        <form id="popup-form">
+            <input type="text" id="popup-text-field" class="block w-full rounded-lg border-gray-200 shadow-sm py-2 px-3 mb-4" placeholder="Enter new title here">
+            <input type="text" id="popup-second-field" class="block w-full rounded-lg border-gray-200 shadow-sm py-2 px-3 mb-4" placeholder="Enter new value for the second field here">
+            <button id="submit-button" class="block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline-blue focus:ring-2 focus:ring-blue-300 focus:border-transparent">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+
+<script>
+    const searchInput = document.getElementById('search');
+    const elements = document.querySelectorAll('.element');
+    const popupContainer = document.getElementById('popup-container');
+    const popup = document.getElementById('popup');
+    const popupTitle = document.getElementById('popup-title');
+    const popupImage = document.getElementById('popup-image');
+    const submitButton = document.getElementById('submit-button');
+    const popupForm = document.getElementById('popup-form');
+    const popupTextField = document.getElementById('popup-text-field');
+    const popupFormField = document.getElementById('popup-form-field'); // new field variable declaration
+
+    submitButton.addEventListener('click', () => {
+        const newTitle = popupTextField.value;
+        const newFormData = popupFormField.value; // new field value assignment
+        console.log('New title:', newTitle);
+        console.log('New form data:', newFormData); // new field value logging
+    });
+
+
+  searchInput.addEventListener('input', () => {
+      const searchTerm = searchInput.value.toLowerCase();
+      elements.forEach(element => {
+          const title = element.querySelector('.title').textContent.toLowerCase();
+          if (title.includes(searchTerm)) {
+              element.style.display = 'block';
+          } else {
+              element.style.display = 'none';
+          }
+      });
+  });
+
+  elements.forEach(element => {
+      element.addEventListener('click', () => {
+          const title = element.querySelector('.title').textContent;
+          const imageSrc = element.querySelector('img').getAttribute('src');
+          const link = element.getAttribute('data-link');
+          popupTitle.textContent = title;
+          popupImage.setAttribute('src', imageSrc);
+          popupContainer.classList.remove('hidden');
+          popupTextField.value = title; // Set the input field to the current title
+          popupImage.addEventListener('click', () => {
+              window.location.href = link;
+          });
+          popupForm.addEventListener('submit', event => {
+              event.preventDefault();
+              const newTitle = popupTextField.value;
+              element.querySelector('.title').textContent = newTitle; // Update the element title
+              popupContainer.classList.add('hidden'); // Close the popup window
+              popupImage.removeEventListener('click', () => {
+                  window.location.href = link;
+              });
+          });
+      });
+  });
+
+  function closePopup() {
+      popupContainer.classList.add('hidden');
+      popupImage.removeEventListener('click', () => {
+          window.location.href = link;
+      });
+  }
+
+  document.addEventListener('keydown', event => {
+      if (event.key === 'Escape') {
+          closePopup();
+      }
+  });
+
+  popupContainer.addEventListener('click', event => {
+      if (event.target === popupContainer) {
+          closePopup();
+      }
+  });
+</script>
+
+
+</body>
+</html>
